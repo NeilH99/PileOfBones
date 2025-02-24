@@ -1,10 +1,10 @@
 [gd_scene load_steps=48 format=3 uid="uid://b7poh2gylhcsb"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_jc1dl"]
-[ext_resource type="Texture2D" uid="uid://k2oiyt5cs6k2" path="res://assests/attack-blob.png" id="2_jnxy0"]
-[ext_resource type="Texture2D" uid="uid://c2vyyjxxh6jj0" path="res://assests/walk-blob.png" id="3_p6xhf"]
-[ext_resource type="Texture2D" uid="uid://ck58txycn2ccy" path="res://assests/idle-blob.png" id="4_0721i"]
-[ext_resource type="Texture2D" uid="uid://btl8pe06iuk1n" path="res://assests/jump-blob.png" id="5_w0vhc"]
+[ext_resource type="Texture2D" uid="uid://k2oiyt5cs6k2" path="res://assests/blob/attack-blob.png" id="2_jnxy0"]
+[ext_resource type="Texture2D" uid="uid://c2vyyjxxh6jj0" path="res://assests/blob/walk-blob.png" id="3_p6xhf"]
+[ext_resource type="Texture2D" uid="uid://ck58txycn2ccy" path="res://assests/blob/idle-blob.png" id="4_0721i"]
+[ext_resource type="Texture2D" uid="uid://btl8pe06iuk1n" path="res://assests/blob/jump-blob.png" id="5_w0vhc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_w5ixp"]
 atlas = ExtResource("2_jnxy0")
