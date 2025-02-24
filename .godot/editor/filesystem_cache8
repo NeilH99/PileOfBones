@@ -1,0 +1,12 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1740431917
+icon.svg::CompressedTexture2D::7838897773585337777::1714049111::1714049120::1::::<><>::
+player.gd::GDScript::-1::1714136995::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::4664293313381807061::1740431655::0::1::::<><>::res://player.gd<>uid://k2oiyt5cs6k2::::res://assests/attack-blob.png<>uid://c2vyyjxxh6jj0::::res://assests/walk-blob.png<>uid://ck58txycn2ccy::::res://assests/idle-blob.png<>uid://btl8pe06iuk1n::::res://assests/jump-blob.png
+tileWorld.tscn::PackedScene::3146343882673881607::1740431655::0::1::::<><>::uid://ck0mwd7sqrffn::::res://assests/Assets.png<>uid://b7poh2gylhcsb::::res://player.tscn
+::res://assests/::1714138257
+Assets.png::CompressedTexture2D::5527107346840810515::1714138219::1714138246::1::::<><>::
+attack-blob.png::CompressedTexture2D::758492251268073883::1714117394::1714138233::1::::<><>::
+idle-blob.png::CompressedTexture2D::5538699972455471692::1714135697::1714138251::1::::<><>::
+jump-blob.png::CompressedTexture2D::3744747565913738985::1714135700::1714138251::1::::<><>::
+walk-blob.png::CompressedTexture2D::6712792654624695543::1714117401::1714138257::1::::<><>::
