@@ -1,0 +1,14 @@
+TODO LIST
+
+Overworld:
+	a.) Design Map
+	b.) Create collision physics for rockwall faces
+	c.) Add fauna & bushes (for encounters)
+	d.) Add NPC with random basic movement with animations
+	e.) Add dialogue from interacting with NPC
+	f.) Design UI & Menu options
+	g.) Save game
+--------------------------------------------------------
+Battle Simulator:
+	a.) Design UI
+	b.)

@@ -1,9 +1,9 @@
+TileMapLayer
 Camera2D
 AnimationPlayer
 CollisionShape2D
 Sprite2D
 CharacterBody2D
-TileMapLayer
 Node2D
 TileMap
 AnimatedSprite2D

@@ -1,3 +1,5 @@
 res://tileWorld.tscn
 res://player.tscn
-res://character_body_2d.gd
+res://Scenes/Overworld/tileWorld.tscn
+res://Player/player.tscn
+res://TODO LIST.txt
