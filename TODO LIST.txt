@@ -1,5 +1,5 @@
 TODO LIST
-
+--------------------------------------------------------
 Overworld:
 	a.) Design Map
 	b.) Create collision physics for rockwall faces
@@ -11,4 +11,23 @@ Overworld:
 --------------------------------------------------------
 Battle Simulator:
 	a.) Design UI
-	b.)
+	b.) Battle mechanics (a biggie)
+	c.) Include Pokemon & Moves from Assets
+	d.) Pokemon capturing functionality
+--------------------------------------------------------
+Movepool:
+	a.) Create Attacks (Name, Type, Physical/Special, Damage, Accuracy, Status Effect)
+	b.) Design how status effects work (Paralyzed: 25%, Poison: 1/5 total health in damage per turn etc)
+--------------------------------------------------------
+Pokemon Pool:
+	a.) Create Pokemon (Objects?)
+	b.) Design stats (Type[Fire, Water etc] Stats[Attack, Defence, HP, Speed etc], Nature[maybe?], Levels)
+--------------------------------------------------------
+Party:
+	a.) Create means to store Pokemon
+	b.) Remember Pokemon levels + currentHP
+	c.) Reserve (like the PC in Pokemon: means to swap out current party members)
+--------------------------------------------------------
+Story:
+	a.) Remind Veg to remind us what he wrote: something about Shadow Harris
+	b.) Find means to create linear progression
