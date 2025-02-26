@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://bk3d3au5o70d4"]
+[gd_scene load_steps=33 format=4 uid="uid://bk3d3au5o70d4"]
 
 [ext_resource type="Texture2D" uid="uid://bf7w1n6mb0h0j" path="res://Assets/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png" id="1_ob3mh"]
 [ext_resource type="Texture2D" uid="uid://q65lvc2hcvt8" path="res://Assets/Tiny Swords (Update 010)/Terrain/Water/Water.png" id="2_0j00y"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cb60iekbcep6y" path="res://Assets/Drawables/coin.png" id="8_p6apk"]
 [ext_resource type="Texture2D" uid="uid://b8cx714dt1l6m" path="res://Assets/Drawables/time.png" id="9_h5rum"]
 [ext_resource type="Texture2D" uid="uid://d3vniebgosbte" path="res://Assets/Pokemon Images/No Background/neelNB.jpg" id="10_dnp15"]
+[ext_resource type="Shader" path="res://Scenes/Battlesim/tileWorld.gdshader" id="10_q3y6x"]
 [ext_resource type="Texture2D" uid="uid://dgfssxipw6qbi" path="res://Assets/Pokemon Images/No Background/pandeoinNB.JPG" id="11_m1oc4"]
 [ext_resource type="Texture2D" uid="uid://dqn5br68ln3cf" path="res://Assets/Pokemon Images/No Background/alfinitreeNB.jpg" id="12_y84kx"]
 [ext_resource type="Texture2D" uid="uid://1eis57xvdvcs" path="res://Assets/Pokemon Images/No Background/scorcherNB.jpg" id="13_bs8y3"]
@@ -155,6 +156,21 @@ corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 100
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tyahk"]
+shader = ExtResource("10_q3y6x")
+shader_parameter/spin_rotation = -2.0
+shader_parameter/spin_speed = 10.0
+shader_parameter/offset = Vector2(0, 0)
+shader_parameter/colour_1 = Vector4(0.871, 0.267, 0.231, 1)
+shader_parameter/colour_2 = Vector4(0, 0.42, 0.706, 1)
+shader_parameter/colour_3 = Vector4(0.086, 0.137, 0.145, 1)
+shader_parameter/contrast = 3.5
+shader_parameter/lighting = 0.4
+shader_parameter/spin_amount = 0.25
+shader_parameter/pixel_filter = 745.0
+shader_parameter/spin_ease = 1.0
+shader_parameter/is_rotate = false
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1qn22"]
 bg_color = Color(0.784783, 0.771285, 0.77466, 1)
@@ -376,6 +392,35 @@ offset_bottom = 66.0
 grow_horizontal = 0
 grow_vertical = 2
 text = "Fucking Monday"
+
+[node name="BackgroundTest" type="Panel" parent="CharacterBody2D/Camera2D/UI"]
+layout_mode = 0
+offset_left = -826.0
+offset_top = -255.0
+offset_right = -378.0
+offset_bottom = -63.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_a7jcc")
+
+[node name="UserFrame" type="Panel" parent="CharacterBody2D/Camera2D/UI/BackgroundTest"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 16.0
+offset_top = -80.0
+offset_right = 176.0
+offset_bottom = 80.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_es8e4")
+
+[node name="TextureRect" type="TextureRect" parent="CharacterBody2D/Camera2D/UI/BackgroundTest/UserFrame"]
+z_index = 3
+material = SubResource("ShaderMaterial_tyahk")
+layout_mode = 0
+offset_left = 18.0
+offset_top = 15.0
+offset_right = 146.0
+offset_bottom = 143.0
 
 [node name="PlayerPartyBox" type="Panel" parent="CharacterBody2D/Camera2D/UI"]
 layout_mode = 0

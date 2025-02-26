@@ -1,12 +1,5 @@
 res://Scenes/Overworld/tileWorld.tscn
-res://Assets/Pokemon/alfinitree.tres
-res://Pokemon.gd
-res://Assets/Pokemon/neel.tres
-res://Assets/Pokemon/philipottomus.tres
-res://Assets/Pokemon/quigbat.tres
-res://Assets/Pokemon/raccoonolly.tres
-res://Assets/Pokemon/scorcher.tres
-res://Assets/Pokemon/swandrew.tres
-res://Assets/Pokemon/vegiraffe.tres
-res://Assets/Pokemon/pandeoin.tres
-res://README.md
+res://Themes/BattleUI.tres
+res://Scenes/Overworld/tileWorld.gdshader
+res://Scenes/Battlesim/Battle.tscn
+res://Scenes/Battlesim/tileWorld.gdshader

@@ -1,3 +1,5 @@
+ColorRect
+TextureRect
 Button
 PanelContainer
 Label
@@ -11,4 +13,3 @@ AnimationPlayer
 CollisionShape2D
 CharacterBody2D
 Node2D
-TileMap
