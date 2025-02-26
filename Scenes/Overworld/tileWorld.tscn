@@ -217,7 +217,6 @@ shape = SubResource("RectangleShape2D_5ilvm")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(-32, -32)
-zoom = Vector2(0.2, 0.2)
 
 [node name="UI" type="Control" parent="CharacterBody2D/Camera2D"]
 layout_mode = 3
