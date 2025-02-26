@@ -1,5 +1,9 @@
-res://Scenes/Overworld/tileWorld.tscn
+res://Assets/Hana Caraka - Topdown Tileset [sample]/Props/Merge.png
+res://Scenes/Overworld/Overworld.tscn
 res://Themes/BattleUI.tres
-res://Scenes/Overworld/tileWorld.gdshader
-res://Scenes/Battlesim/Battle.tscn
 res://Scenes/Battlesim/tileWorld.gdshader
+res://Scenes/Battlesim/BattleSimulator.tscn
+res://Player/character_body_2d.gd
+res://Player/player.gd
+res://Player/PlayerMovement.gd
+res://Player/playerMovement.gd

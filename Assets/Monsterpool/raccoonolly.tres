@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Pokemon" load_steps=2 format=3 uid="uid://tva1uep6hrqw"]
+
+[ext_resource type="Script" path="res://Assets/Monsterpool/scripts/Pokemon.gd" id="1_lvyi3"]
+
+[resource]
+script = ExtResource("1_lvyi3")
+name = "Raccoonolly"
+typeOne = "Fire"
+typeTwo = "Normal"
+gender = ""
+ability = ""
+nature = ""
+item = ""
+moveset = Array[String](["", "", "", ""])
+hp = 65
+attackPhys = 50
+attackSpec = 70
+defencePhys = 40
+defenceSpec = 40
+speed = 40

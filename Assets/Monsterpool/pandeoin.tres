@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Pokemon" load_steps=2 format=3 uid="uid://bgo8nbboxcgh6"]
+
+[ext_resource type="Script" path="res://Assets/Monsterpool/scripts/Pokemon.gd" id="1_rv83p"]
+
+[resource]
+script = ExtResource("1_rv83p")
+name = "Pandeoin"
+typeOne = "Rock"
+typeTwo = "Ground"
+gender = ""
+ability = ""
+nature = ""
+item = ""
+moveset = Array[String](["", "", "", ""])
+hp = 100
+attackPhys = 37
+attackSpec = 37
+defencePhys = 50
+defenceSpec = 50
+speed = 25

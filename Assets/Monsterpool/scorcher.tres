@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Pokemon" load_steps=2 format=3 uid="uid://dr74ga65wdiwy"]
+
+[ext_resource type="Script" path="res://Assets/Monsterpool/scripts/Pokemon.gd" id="1_57e55"]
+
+[resource]
+script = ExtResource("1_57e55")
+name = "Scorcher"
+typeOne = "Fire"
+typeTwo = "Rock"
+gender = ""
+ability = ""
+nature = ""
+item = ""
+moveset = Array[String](["", "", "", ""])
+hp = 70
+attackPhys = 70
+attackSpec = 55
+defencePhys = 40
+defenceSpec = 40
+speed = 10

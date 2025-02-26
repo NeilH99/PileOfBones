@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Pokemon" load_steps=2 format=3 uid="uid://o1vdwdfl638p"]
+
+[ext_resource type="Script" path="res://Assets/Monsterpool/scripts/Pokemon.gd" id="1_f1rwi"]
+
+[resource]
+script = ExtResource("1_f1rwi")
+name = "N.E.E.L."
+typeOne = "Water"
+typeTwo = "Electric"
+gender = ""
+ability = ""
+nature = ""
+item = ""
+moveset = Array[String](["", "", "", ""])
+hp = 70
+attackPhys = 70
+attackSpec = 70
+defencePhys = 70
+defenceSpec = 70
+speed = 70
