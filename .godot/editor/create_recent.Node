@@ -1,3 +1,4 @@
+Button
 PanelContainer
 Label
 Panel
@@ -11,5 +12,3 @@ CollisionShape2D
 CharacterBody2D
 Node2D
 TileMap
-AnimatedSprite2D
-Polygon2D

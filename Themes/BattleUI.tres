@@ -1,0 +1,23 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://byhx7y1a44i6n"]
+
+[ext_resource type="FontFile" uid="uid://460xksjrngjk" path="res://Themes/coolvetica/Coolvetica Hv Comp.otf" id="1_epxft"]
+[ext_resource type="Texture2D" uid="uid://cvn01gyrfbyvt" path="res://Themes/box.png" id="2_mkc8r"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lynqw"]
+bg_color = Color(0.400392, 0.64761, 0.680672, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fw6x7"]
+texture = ExtResource("2_mkc8r")
+texture_margin_left = 12.0
+texture_margin_top = 12.0
+texture_margin_right = 12.0
+texture_margin_bottom = 12.0
+
+[resource]
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/font_sizes/font_size = 34
+Button/styles/normal = SubResource("StyleBoxFlat_lynqw")
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 61
+Label/fonts/font = ExtResource("1_epxft")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_fw6x7")
