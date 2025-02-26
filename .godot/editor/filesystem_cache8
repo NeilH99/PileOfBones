@@ -1,12 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1740506751
-TODO LIST.txt::TextFile::-1::1740506320::0::1::::<><>::
-::res://Assets/::1740506512
+::res://::1740531245
+Pokemon.gd::GDScript::-1::1740531029::0::1::::Pokemon<>Resource<>::
+README.md::TextFile::-1::1740513116::0::1::::<><>::
+TODO LIST.txt::TextFile::-1::1740513219::0::1::::<><>::
+::res://Assets/::1740530759
 ::res://Assets/blob/::1740506047
 attack-blob.png::CompressedTexture2D::758492251268073883::1740501590::1740506046::1::::<><>::
 idle-blob.png::CompressedTexture2D::5538699972455471692::1740501590::1740506046::1::::<><>::
 jump-blob.png::CompressedTexture2D::3744747565913738985::1740501590::1740506046::1::::<><>::
 walk-blob.png::CompressedTexture2D::6712792654624695543::1740501590::1740506046::1::::<><>::
+::res://Assets/Drawables/::1740529204
+coin.png::CompressedTexture2D::4908558358160216786::1740528832::1740528833::1::::<><>::
+Majoras moon.png::CompressedTexture2D::2883439798242453574::1740528295::1740528298::1::::<><>::
+time.png::CompressedTexture2D::4708236326064038774::1740529203::1740529204::1::::<><>::
 ::res://Assets/Hana Caraka - Topdown Tileset [sample]/::1740506512
 Read Me.txt::TextFile::-1::1740506512::0::1::::<><>::
 ::res://Assets/Hana Caraka - Topdown Tileset [sample]/Props/::1740506512
@@ -26,6 +32,9 @@ Spring - simplified.png::CompressedTexture2D::7174504888178623943::1740506512::1
 Summer - simplified.png::CompressedTexture2D::8645814154169471362::1740506512::1740506512::1::::<><>::
 Tufts and Lumps.png::CompressedTexture2D::4876670784004069121::1740506512::1740506512::1::::<><>::
 Winter - simplified.png::CompressedTexture2D::2916116671359228006::1740506512::1740506512::1::::<><>::
+::res://Assets/Movepool/::1740530759
+::res://Assets/Pokemon/::1740531177
+alfinitree.tres::Resource/Pokemon::7568088357784072187::1740531177::0::1::::<><>::res://Pokemon.gd
 ::res://Assets/Pokemon Images/::1740502801
 ::res://Assets/Pokemon Images/No Background/::1740506047
 alfinitreeNB.jpg::CompressedTexture2D::8310944697967998641::1740503022::1740506047::1::::<><>::
@@ -322,5 +331,5 @@ player.gd::GDScript::-1::1740501583::0::1::::<>CharacterBody2D<>::
 player.tscn::PackedScene::4664293313381807061::1740506320::0::1::::<><>::res://Player/player.gd<>uid://k2oiyt5cs6k2::::res://Assets/blob/attack-blob.png<>uid://c2vyyjxxh6jj0::::res://Assets/blob/walk-blob.png<>uid://ck58txycn2ccy::::res://Assets/blob/idle-blob.png<>uid://btl8pe06iuk1n::::res://Assets/blob/jump-blob.png
 ::res://Scenes/::1740502328
 ::res://Scenes/Battlesim/::1740502271
-::res://Scenes/Overworld/::1740506330
-tileWorld.tscn::PackedScene::3146343882673881607::1740506330::0::1::::<><>::uid://bf7w1n6mb0h0j::::res://Assets/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png<>uid://q65lvc2hcvt8::::res://Assets/Tiny Swords (Update 010)/Terrain/Water/Water.png<>uid://bgsqmyisr4qyf::::res://Assets/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Elevation.png<>res://Player/character_body_2d.gd<>uid://djxhrbhobfivp::::res://Player/icon.svg<>uid://csx18aasi1dqi::::res://Assets/Tiny Swords (Update 010)/Terrain/Bridge/Bridge_All.png
+::res://Scenes/Overworld/::1740531234
+tileWorld.tscn::PackedScene::3146343882673881607::1740531234::0::1::::<><>::uid://bf7w1n6mb0h0j::::res://Assets/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png<>uid://q65lvc2hcvt8::::res://Assets/Tiny Swords (Update 010)/Terrain/Water/Water.png<>uid://bgsqmyisr4qyf::::res://Assets/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Elevation.png<>res://Player/character_body_2d.gd<>uid://djxhrbhobfivp::::res://Player/icon.svg<>uid://csx18aasi1dqi::::res://Assets/Tiny Swords (Update 010)/Terrain/Bridge/Bridge_All.png<>uid://bhc03ka3pttow::::res://Assets/Drawables/Majoras moon.png<>uid://cb60iekbcep6y::::res://Assets/Drawables/coin.png<>uid://b8cx714dt1l6m::::res://Assets/Drawables/time.png<>uid://d3vniebgosbte::::res://Assets/Pokemon Images/No Background/neelNB.jpg<>uid://dgfssxipw6qbi::::res://Assets/Pokemon Images/No Background/pandeoinNB.JPG<>uid://dqn5br68ln3cf::::res://Assets/Pokemon Images/No Background/alfinitreeNB.jpg<>uid://1eis57xvdvcs::::res://Assets/Pokemon Images/No Background/scorcherNB.jpg<>uid://cijd5ecqb3bgy::::res://Assets/Pokemon Images/No Background/swandrewNB.jpg<>uid://bpcep5v22u130::::res://Assets/Pokemon Images/No Background/philipottomusNB.jpg

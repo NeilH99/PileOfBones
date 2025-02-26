@@ -1,3 +1,7 @@
+TextEdit
+TextureRect
+Panel
+Control
 TileMapLayer
 Camera2D
 AnimationPlayer
@@ -9,4 +13,3 @@ TileMap
 AnimatedSprite2D
 Polygon2D
 CollisionPolygon2D
-StaticBody2D
