@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://bk3d3au5o70d4"]
+[gd_scene load_steps=31 format=4 uid="uid://bk3d3au5o70d4"]
 
 [ext_resource type="Texture2D" uid="uid://bf7w1n6mb0h0j" path="res://Assets/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png" id="1_ob3mh"]
 [ext_resource type="Texture2D" uid="uid://q65lvc2hcvt8" path="res://Assets/Tiny Swords (Update 010)/Terrain/Water/Water.png" id="2_0j00y"]
@@ -161,6 +161,20 @@ bg_color = Color(0.784783, 0.771285, 0.77466, 1)
 corner_radius_top_left = 10
 corner_radius_top_right = 100
 corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bm6p0"]
+bg_color = Color(0.784783, 0.771285, 0.77466, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xts4q"]
+bg_color = Color(0.784783, 0.771285, 0.77466, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 100
 corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5pf8d"]
@@ -469,7 +483,7 @@ offset_top = -24.0
 offset_right = 424.0
 offset_bottom = 24.0
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_1qn22")
+theme_override_styles/panel = SubResource("StyleBoxFlat_bm6p0")
 
 [node name="SlotFiveIcon" type="TextureRect" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox/SlotFiveFrame"]
 layout_mode = 1
@@ -514,7 +528,7 @@ offset_top = 32.0
 offset_right = 424.0
 offset_bottom = 80.0
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_1qn22")
+theme_override_styles/panel = SubResource("StyleBoxFlat_xts4q")
 
 [node name="SlotSixIcon" type="TextureRect" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox/SlotSixFrame"]
 layout_mode = 1
