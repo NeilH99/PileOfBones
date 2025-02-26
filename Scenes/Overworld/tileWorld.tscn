@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://bk3d3au5o70d4"]
+[gd_scene load_steps=29 format=4 uid="uid://bk3d3au5o70d4"]
 
 [ext_resource type="Texture2D" uid="uid://bf7w1n6mb0h0j" path="res://Assets/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png" id="1_ob3mh"]
 [ext_resource type="Texture2D" uid="uid://q65lvc2hcvt8" path="res://Assets/Tiny Swords (Update 010)/Terrain/Water/Water.png" id="2_0j00y"]
@@ -6,6 +6,15 @@
 [ext_resource type="Script" path="res://Player/character_body_2d.gd" id="3_tdpe3"]
 [ext_resource type="Texture2D" uid="uid://djxhrbhobfivp" path="res://Player/icon.svg" id="4_50xdt"]
 [ext_resource type="Texture2D" uid="uid://csx18aasi1dqi" path="res://Assets/Tiny Swords (Update 010)/Terrain/Bridge/Bridge_All.png" id="4_e8q6b"]
+[ext_resource type="Texture2D" uid="uid://bhc03ka3pttow" path="res://Assets/Drawables/Majoras moon.png" id="7_m155t"]
+[ext_resource type="Texture2D" uid="uid://cb60iekbcep6y" path="res://Assets/Drawables/coin.png" id="8_p6apk"]
+[ext_resource type="Texture2D" uid="uid://b8cx714dt1l6m" path="res://Assets/Drawables/time.png" id="9_h5rum"]
+[ext_resource type="Texture2D" uid="uid://d3vniebgosbte" path="res://Assets/Pokemon Images/No Background/neelNB.jpg" id="10_dnp15"]
+[ext_resource type="Texture2D" uid="uid://dgfssxipw6qbi" path="res://Assets/Pokemon Images/No Background/pandeoinNB.JPG" id="11_m1oc4"]
+[ext_resource type="Texture2D" uid="uid://dqn5br68ln3cf" path="res://Assets/Pokemon Images/No Background/alfinitreeNB.jpg" id="12_y84kx"]
+[ext_resource type="Texture2D" uid="uid://1eis57xvdvcs" path="res://Assets/Pokemon Images/No Background/scorcherNB.jpg" id="13_bs8y3"]
+[ext_resource type="Texture2D" uid="uid://cijd5ecqb3bgy" path="res://Assets/Pokemon Images/No Background/swandrewNB.jpg" id="14_etuys"]
+[ext_resource type="Texture2D" uid="uid://bpcep5v22u130" path="res://Assets/Pokemon Images/No Background/philipottomusNB.jpg" id="15_n5u10"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_m7546"]
 tile_data = PackedInt32Array(0, 65536, 0, 65536, 65536, 1, 131072, 65536, 1, 196608, 65536, 1, 262144, 65536, 1, 327680, 65536, 1, 393216, 65536, 1, 458752, 65536, 1, 524288, 65536, 2, 1, 65536, 0, 65537, 65536, 1, 131073, 65536, 1, 196609, 65536, 1, 262145, 65536, 1, 327681, 65536, 1, 393217, 65536, 1, 458753, 65536, 1, 524289, 65536, 2, 2, 65536, 0, 65538, 65536, 1, 131074, 65536, 1, 196610, 65536, 1, 262146, 65536, 1, 327682, 65536, 1, 393218, 65536, 1, 458754, 65536, 1, 524290, 65536, 2, 3, 65536, 0, 65539, 65536, 1, 131075, 65536, 1, 196611, 65536, 1, 262147, 65536, 1, 327683, 65536, 1, 393219, 65536, 1, 458755, 65536, 1, 524291, 65536, 2, 4, 65536, 0, 65540, 65536, 1, 131076, 65536, 1, 196612, 65536, 1, 262148, 65536, 1, 327684, 65536, 1, 393220, 65536, 1, 458756, 65536, 1, 524292, 65536, 2, 5, 65536, 0, 65541, 65536, 1, 131077, 65536, 1, 196613, 65536, 1, 262149, 65536, 1, 327685, 65536, 1, 393221, 65536, 1, 458757, 65536, 1, 524293, 65536, 2, 6, 65536, 0, 65542, 65536, 1, 131078, 65536, 1, 196614, 65536, 1, 262150, 65536, 1, 327686, 65536, 1, 393222, 65536, 1, 458758, 65536, 1, 524294, 65536, 2, 7, 65536, 0, 65543, 65536, 1, 131079, 65536, 1, 196615, 65536, 1, 262151, 65536, 1, 327687, 65536, 1, 393223, 65536, 1, 458759, 65536, 1, 524295, 65536, 2)
@@ -114,6 +123,53 @@ pattern_0 = SubResource("TileMapPattern_m7546")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ilvm"]
 size = Vector2(69, 61)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a7jcc"]
+bg_color = Color(0.835294, 0.196078, 0.113725, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.817521, 0.817521, 0.817521, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_es8e4"]
+bg_color = Color(0.784783, 0.771285, 0.77466, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6uqee"]
+bg_color = Color(0.784783, 0.771285, 0.77466, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jgv0l"]
+bg_color = Color(0.784783, 0.771285, 0.77466, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1qn22"]
+bg_color = Color(0.784783, 0.771285, 0.77466, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 100
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5pf8d"]
+bg_color = Color(0.784783, 0.771285, 0.77466, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
 [node name="Main" type="Node2D"]
 position = Vector2(320, 320)
 
@@ -161,4 +217,420 @@ shape = SubResource("RectangleShape2D_5ilvm")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(-32, -32)
-zoom = Vector2(0.2, 0.2)
+
+[node name="UI" type="Control" parent="CharacterBody2D/Camera2D"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 72.0
+offset_bottom = 72.0
+
+[node name="PlayerInfoBox" type="Panel" parent="CharacterBody2D/Camera2D/UI"]
+layout_mode = 0
+offset_left = -824.0
+offset_top = -472.0
+offset_right = -376.0
+offset_bottom = -280.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_a7jcc")
+
+[node name="UserFrame" type="Panel" parent="CharacterBody2D/Camera2D/UI/PlayerInfoBox"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 16.0
+offset_top = -80.0
+offset_right = 176.0
+offset_bottom = 80.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_es8e4")
+
+[node name="UserPhoto" type="TextureRect" parent="CharacterBody2D/Camera2D/UI/PlayerInfoBox/UserFrame"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -72.0
+offset_top = -72.0
+offset_right = 72.0
+offset_bottom = 72.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_m155t")
+expand_mode = 1
+
+[node name="GoldFrame" type="Panel" parent="CharacterBody2D/Camera2D/UI/PlayerInfoBox"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 216.0
+offset_top = -40.0
+offset_right = 264.0
+offset_bottom = 8.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_6uqee")
+
+[node name="GoldIcon" type="TextureRect" parent="CharacterBody2D/Camera2D/UI/PlayerInfoBox/GoldFrame"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_p6apk")
+expand_mode = 1
+
+[node name="CalendarFrame" type="Panel" parent="CharacterBody2D/Camera2D/UI/PlayerInfoBox"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 216.0
+offset_top = 24.0
+offset_right = 264.0
+offset_bottom = 72.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_jgv0l")
+
+[node name="CalendarIcon" type="TextureRect" parent="CharacterBody2D/Camera2D/UI/PlayerInfoBox/CalendarFrame"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_h5rum")
+expand_mode = 1
+
+[node name="UserName" type="TextEdit" parent="CharacterBody2D/Camera2D/UI/PlayerInfoBox"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -82.0
+offset_right = -16.0
+offset_bottom = -48.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "Eel Salesman"
+
+[node name="GoldValue" type="TextEdit" parent="CharacterBody2D/Camera2D/UI/PlayerInfoBox"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -176.0
+offset_top = -32.0
+offset_right = -16.0
+offset_bottom = 2.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "$ 500 , 000 , 001"
+
+[node name="CalendarDate" type="TextEdit" parent="CharacterBody2D/Camera2D/UI/PlayerInfoBox"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -176.0
+offset_top = 32.0
+offset_right = -16.0
+offset_bottom = 66.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "Fucking Monday"
+
+[node name="PlayerPartyBox" type="Panel" parent="CharacterBody2D/Camera2D/UI"]
+layout_mode = 0
+offset_left = -360.0
+offset_top = -472.0
+offset_right = 88.0
+offset_bottom = -280.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_a7jcc")
+
+[node name="SlotOneFrame" type="Panel" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 24.0
+offset_top = -80.0
+offset_right = 72.0
+offset_bottom = -32.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_6uqee")
+
+[node name="SlotOneIcon" type="TextureRect" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox/SlotOneFrame"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_dnp15")
+expand_mode = 1
+
+[node name="SlotOneName" type="TextEdit" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox/SlotOneFrame"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 8.0
+offset_top = -16.0
+offset_right = 152.0
+offset_bottom = 18.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "N.E.E.L.
+"
+
+[node name="SlotFourFrame" type="Panel" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 376.0
+offset_top = -80.0
+offset_right = 424.0
+offset_bottom = -32.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1qn22")
+
+[node name="SlotFourIcon" type="TextureRect" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox/SlotFourFrame"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_m1oc4")
+expand_mode = 1
+
+[node name="SlotFourName" type="TextEdit" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox/SlotFourFrame"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -184.0
+offset_top = -16.0
+offset_right = -56.0
+offset_bottom = 18.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "Pandeoin
+"
+
+[node name="SlotFiveFrame" type="Panel" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 376.0
+offset_top = -24.0
+offset_right = 424.0
+offset_bottom = 24.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1qn22")
+
+[node name="SlotFiveIcon" type="TextureRect" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox/SlotFiveFrame"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_y84kx")
+expand_mode = 1
+
+[node name="SlotFiveName" type="TextEdit" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox/SlotFiveFrame"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -184.0
+offset_top = -16.0
+offset_right = -56.0
+offset_bottom = 18.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "Alfinitree
+
+"
+
+[node name="SlotSixFrame" type="Panel" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 376.0
+offset_top = 32.0
+offset_right = 424.0
+offset_bottom = 80.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1qn22")
+
+[node name="SlotSixIcon" type="TextureRect" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox/SlotSixFrame"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_bs8y3")
+expand_mode = 1
+
+[node name="SlotSixName" type="TextEdit" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox/SlotSixFrame"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -184.0
+offset_top = -16.0
+offset_right = -56.0
+offset_bottom = 18.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "Scorcher
+
+"
+
+[node name="SlotThreeFrame" type="Panel" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 24.0
+offset_top = 32.0
+offset_right = 72.0
+offset_bottom = 80.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_jgv0l")
+
+[node name="SlotThreeIcon" type="TextureRect" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox/SlotThreeFrame"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_etuys")
+expand_mode = 1
+
+[node name="SlotThreeName" type="TextEdit" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox/SlotThreeFrame"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 8.0
+offset_top = -16.0
+offset_right = 152.0
+offset_bottom = 18.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "Swandrew"
+
+[node name="SlotTwoFrame" type="Panel" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 24.0
+offset_top = -24.0
+offset_right = 72.0
+offset_bottom = 24.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5pf8d")
+
+[node name="SlotTwoIcon" type="TextureRect" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox/SlotTwoFrame"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("15_n5u10")
+expand_mode = 1
+
+[node name="SlotTwoName" type="TextEdit" parent="CharacterBody2D/Camera2D/UI/PlayerPartyBox/SlotTwoFrame"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 8.0
+offset_top = -16.0
+offset_right = 152.0
+offset_bottom = 18.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "Philippotomus"

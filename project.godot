@@ -10,10 +10,12 @@ config_version=5
 
 [application]
 
-config/name="Test"
+config/name="The never ending plight of the poor souls of the Judean Peoples Front - The Sequel"
 run/main_scene="res://Scenes/Overworld/tileWorld.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-config/icon="res://Player/icon.svg"
+boot_splash/bg_color=Color(1, 1, 1, 1)
+boot_splash/image="res://Assets/Pokemon Images/With Backgrounds/quigbat.jpg"
+config/icon="res://Assets/Pokemon Images/With Backgrounds/quigbat.jpg"
 
 [display]
 

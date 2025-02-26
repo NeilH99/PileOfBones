@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Pokemon" load_steps=2 format=3 uid="uid://b7vbrn141nhsu"]
+
+[ext_resource type="Script" path="res://Pokemon.gd" id="1_8b0tg"]
+
+[resource]
+script = ExtResource("1_8b0tg")
+name = "Vegiraffe"
+typeOne = "Grass"
+typeTwo = "Psychic"
+gender = ""
+ability = ""
+nature = ""
+item = ""
+moveset = Array[String](["", "", "", ""])
+hp = 70
+attackPhys = 65
+attackSpec = 65
+defencePhys = 70
+defenceSpec = 25
+speed = 30
