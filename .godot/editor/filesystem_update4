@@ -1,6 +1,0 @@
-res://Scenes/Overworld/Overworld.tscn
-res://Themes/BattleUI.tres
-res://Scenes/Battlesim/tileWorld.gdshader
-res://Scenes/Battlesim/BattleSimulator.tscn
-res://Scenes/Battlesim/battle_simulator.gd
-res://Scenes/Battlesim/fightBtnHandler.gd
