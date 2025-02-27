@@ -34,46 +34,51 @@ offset_top = -3368.0
 offset_right = 6648.0
 offset_bottom = 4200.0
 
-[node name="Neel" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(448, 448)
-scale = Vector2(0.466667, 0.82963)
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+offset_right = 953.0
+offset_bottom = 1077.0
+
+[node name="PlaceHolder" type="TextureRect" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
 texture = ExtResource("3_6ekmt")
+expand_mode = 1
 
-[node name="Philipottomus" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(1472, 448)
-scale = Vector2(0.466667, 0.82963)
-texture = ExtResource("4_dwiux")
-
-[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
-offset_top = 896.0
-offset_right = 896.0
-offset_bottom = 1080.0
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.35
 theme = ExtResource("3_xv0ka")
 
-[node name="HomeButtons" type="GridContainer" parent="CanvasLayer/PanelContainer"]
+[node name="HomeButtons" type="GridContainer" parent="CanvasLayer/VBoxContainer/PanelContainer"]
 layout_mode = 2
 columns = 2
 
-[node name="Fight" type="Button" parent="CanvasLayer/PanelContainer/HomeButtons"]
+[node name="Fight" type="Button" parent="CanvasLayer/VBoxContainer/PanelContainer/HomeButtons"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Fight"
 
-[node name="Bag" type="Button" parent="CanvasLayer/PanelContainer/HomeButtons"]
+[node name="Bag" type="Button" parent="CanvasLayer/VBoxContainer/PanelContainer/HomeButtons"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Bag"
 
-[node name="Pokemon" type="Button" parent="CanvasLayer/PanelContainer/HomeButtons"]
+[node name="Pokemon" type="Button" parent="CanvasLayer/VBoxContainer/PanelContainer/HomeButtons"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Pokemon"
 
-[node name="Run" type="Button" parent="CanvasLayer/PanelContainer/HomeButtons"]
+[node name="Run" type="Button" parent="CanvasLayer/VBoxContainer/PanelContainer/HomeButtons"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Run"
+
+[node name="Philipottomus" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(1472, 448)
+scale = Vector2(0.466667, 0.82963)
+texture = ExtResource("4_dwiux")

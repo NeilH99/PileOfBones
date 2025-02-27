@@ -1,7 +1,8 @@
+TextureRect
+VBoxContainer
 AnimatedSprite2D
 AnimationPlayer
 ColorRect
-TextureRect
 Button
 PanelContainer
 Label
@@ -11,5 +12,3 @@ CanvasLayer
 TileMapLayer
 Sprite2D
 Camera2D
-CollisionShape2D
-CharacterBody2D
