@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://cpwnltlbm8pv7"]
 
-[ext_resource type="Script" path="res://Scenes/Battlesim/battle_simulator.gd" id="1_6k6vr"]
+[ext_resource type="Script" path="res://Scenes/Battlesim/scripts/battle_simulator.gd" id="1_6k6vr"]
 [ext_resource type="Texture2D" uid="uid://bypoup20pfa6i" path="res://Assets/Drawables/Pokemon Images/With Backgrounds/neel.jpg" id="3_6ekmt"]
 [ext_resource type="Theme" uid="uid://byhx7y1a44i6n" path="res://Themes/BattleUI.tres" id="3_xv0ka"]
 [ext_resource type="Shader" path="res://Scenes/Battlesim/tileWorld.gdshader" id="4_1bdv3"]

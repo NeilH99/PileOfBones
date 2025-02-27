@@ -1,6 +1,6 @@
 extends Node2D
 
-var fightBtnHandler = preload("res://Scenes/Battlesim/fightBtnHandler.gd").new()
+var fightBtnHandler = preload("res://Scenes/Battlesim/scripts/fightBtnHandler.gd").new()
 
 func _ready():
 	# Connect Button1's pressed signal
