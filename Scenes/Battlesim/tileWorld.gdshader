@@ -17,7 +17,7 @@ uniform bool is_rotate = false;
 void fragment() {
     vec2 screen_size = vec2(1.0) / SCREEN_PIXEL_SIZE;
     float pixel_size = length(screen_size.xy) / pixel_filter;
-    
+
     vec2 uv = (floor(SCREEN_UV * screen_size * (1.0 / pixel_size)) * pixel_size - 0.5 * screen_size) / length(screen_size) - offset;
     float uv_len = length(uv);
 
