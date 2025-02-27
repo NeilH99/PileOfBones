@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://cpwnltlbm8pv7"]
+[gd_scene load_steps=7 format=3 uid="uid://cpwnltlbm8pv7"]
 
+[ext_resource type="Script" path="res://Scenes/Battlesim/battle_simulator.gd" id="1_6k6vr"]
 [ext_resource type="Texture2D" uid="uid://bypoup20pfa6i" path="res://Assets/Drawables/Pokemon Images/With Backgrounds/neel.jpg" id="3_6ekmt"]
 [ext_resource type="Theme" uid="uid://byhx7y1a44i6n" path="res://Themes/BattleUI.tres" id="3_xv0ka"]
 [ext_resource type="Shader" path="res://Scenes/Battlesim/tileWorld.gdshader" id="4_1bdv3"]
@@ -21,8 +22,17 @@ shader_parameter/spin_ease = 1.0
 shader_parameter/is_rotate = false
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_6k6vr")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BalatroBackgroundShader" type="ColorRect" parent="CanvasLayer"]
+z_index = -1
+material = SubResource("ShaderMaterial_qvhr1")
+offset_left = -3816.0
+offset_top = -3368.0
+offset_right = 6648.0
+offset_bottom = 4200.0
 
 [node name="Neel" type="Sprite2D" parent="CanvasLayer"]
 position = Vector2(448, 448)
@@ -40,38 +50,30 @@ offset_right = 896.0
 offset_bottom = 1080.0
 theme = ExtResource("3_xv0ka")
 
-[node name="GridContainer" type="GridContainer" parent="CanvasLayer/PanelContainer"]
+[node name="HomeButtons" type="GridContainer" parent="CanvasLayer/PanelContainer"]
 layout_mode = 2
 columns = 2
 
-[node name="Fight" type="Button" parent="CanvasLayer/PanelContainer/GridContainer"]
+[node name="Fight" type="Button" parent="CanvasLayer/PanelContainer/HomeButtons"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Fight"
 
-[node name="Bag" type="Button" parent="CanvasLayer/PanelContainer/GridContainer"]
+[node name="Bag" type="Button" parent="CanvasLayer/PanelContainer/HomeButtons"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Bag"
 
-[node name="Pokemon" type="Button" parent="CanvasLayer/PanelContainer/GridContainer"]
+[node name="Pokemon" type="Button" parent="CanvasLayer/PanelContainer/HomeButtons"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Pokemon"
 
-[node name="Run" type="Button" parent="CanvasLayer/PanelContainer/GridContainer"]
+[node name="Run" type="Button" parent="CanvasLayer/PanelContainer/HomeButtons"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Run"
-
-[node name="BalatroBackgroundShader" type="ColorRect" parent="CanvasLayer"]
-z_index = -1
-material = SubResource("ShaderMaterial_qvhr1")
-offset_left = -3816.0
-offset_top = -3368.0
-offset_right = 6648.0
-offset_bottom = 4200.0
