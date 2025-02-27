@@ -1,5 +1,6 @@
-res://Player
-res://Assets/Hana Caraka - Topdown Tileset [sample]/Props
+res://Scenes/Overworld/Player/Sprites/walk
+res://Assets/Drawables
+res://Assets/Drawables/Pokemon Images/With Backgrounds
 res://Scenes/Battlesim
 res://Themes
 res://Themes/coolvetica

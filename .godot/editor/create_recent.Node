@@ -1,3 +1,5 @@
+AnimatedSprite2D
+AnimationPlayer
 ColorRect
 TextureRect
 Button
@@ -9,7 +11,5 @@ CanvasLayer
 TileMapLayer
 Sprite2D
 Camera2D
-AnimationPlayer
 CollisionShape2D
 CharacterBody2D
-Node2D

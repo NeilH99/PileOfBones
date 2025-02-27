@@ -1,11 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1740596576
+::res://::1740659757
 README.md::TextFile::-1::1740531801::0::1::::<><>::
 TODO LIST.txt::TextFile::-1::1740513219::0::1::::<><>::
-::res://Assets/::1740596576
-::res://Assets/Drawables/::1740596576
+::res://Assets/::1740596583
+::res://Assets/Drawables/::1740659832
 coin.png::CompressedTexture2D::4908558358160216786::1740528832::1740594223::1::::<><>::
 Majoras moon.png::CompressedTexture2D::2883439798242453574::1740528295::1740594223::1::::<><>::
+scorcher.png::CompressedTexture2D::3533770590037378524::1740659832::1740659833::1::::<><>::
 time.png::CompressedTexture2D::4708236326064038774::1740529203::1740594223::1::::<><>::
 ::res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/::1740506512
 Read Me.txt::TextFile::-1::1740506512::0::1::::<><>::
@@ -27,7 +28,7 @@ Summer - simplified.png::CompressedTexture2D::8645814154169471362::1740506512::1
 Tufts and Lumps.png::CompressedTexture2D::4876670784004069121::1740506512::1740596558::1::::<><>::
 Winter - simplified.png::CompressedTexture2D::2916116671359228006::1740506512::1740596558::1::::<><>::
 ::res://Assets/Drawables/Pokemon Images/::1740502801
-::res://Assets/Drawables/Pokemon Images/No Background/::1740594224
+::res://Assets/Drawables/Pokemon Images/No Background/::1740596577
 alfinitreeNB.jpg::CompressedTexture2D::8310944697967998641::1740503022::1740596577::1::::<><>::
 jullifishNB.jpg::CompressedTexture2D::7909033448157813595::1740503022::1740596577::1::::<><>::
 neelNB.jpg::CompressedTexture2D::9168705424966903934::1740503022::1740596577::1::::<><>::
@@ -40,7 +41,7 @@ scorcherNB.jpg::CompressedTexture2D::1833686952044966642::1740503022::1740596577
 swandrewNB.jpg::CompressedTexture2D::5353167454984859864::1740503022::1740596577::1::::<><>::
 vegiraffeNB.jpg::CompressedTexture2D::9178739391797262799::1740503022::1740596577::1::::<><>::
 zobeeNB.jpg::CompressedTexture2D::3669998433036633070::1740503140::1740596577::1::::<><>::
-::res://Assets/Drawables/Pokemon Images/With Backgrounds/::1740594223
+::res://Assets/Drawables/Pokemon Images/With Backgrounds/::1740596577
 alfinitree.jpg::CompressedTexture2D::5237068014092512338::1740502818::1740596577::1::::<><>::
 jullifish.jpg::CompressedTexture2D::2146039409259453471::1740502818::1740596577::1::::<><>::
 neel.jpg::CompressedTexture2D::4102805181809702942::1740502818::1740596577::1::::<><>::
@@ -316,27 +317,47 @@ Ribbon_Yellow_Connection_Right.png::CompressedTexture2D::1802738141353954249::17
 Ribbon_Yellow_Connection_Right_Pressed.png::CompressedTexture2D::7462855739405615569::1740501590::1740596563::1::::<><>::
 Ribbon_Yellow_Connection_Up.png::CompressedTexture2D::1569210347522849785::1740501590::1740596563::1::::<><>::
 Ribbon_Yellow_Connection_Up_Pressed.png::CompressedTexture2D::2826805726092493307::1740501590::1740596563::1::::<><>::
-::res://Assets/Movepool/::1740530759
-::res://Assets/Pokemon/::1740594257
-alfinitree.tres::Resource/Pokemon::7568088357784072187::1740594257::0::1::::<><>::res://Assets/Pokemon/scripts/Pokemon.gd
-neel.tres::Resource/Pokemon::1037599207159063145::1740594257::0::1::::<><>::res://Assets/Pokemon/scripts/Pokemon.gd
-pandeoin.tres::Resource/Pokemon::2838481964895261221::1740594257::0::1::::<><>::res://Assets/Pokemon/scripts/Pokemon.gd
-philipottomus.tres::Resource/Pokemon::1602097972685239797::1740594257::0::1::::<><>::res://Assets/Pokemon/scripts/Pokemon.gd
-quigbat.tres::Resource/Pokemon::8867309257142166582::1740594257::0::1::::<><>::res://Assets/Pokemon/scripts/Pokemon.gd
-raccoonolly.tres::Resource/Pokemon::1376987449968871554::1740594257::0::1::::<><>::res://Assets/Pokemon/scripts/Pokemon.gd
-scorcher.tres::Resource/Pokemon::8420304037890950300::1740594257::0::1::::<><>::res://Assets/Pokemon/scripts/Pokemon.gd
-swandrew.tres::Resource/Pokemon::8736487553846209458::1740594257::0::1::::<><>::res://Assets/Pokemon/scripts/Pokemon.gd
-vegiraffe.tres::Resource/Pokemon::4675907412755900732::1740594257::0::1::::<><>::res://Assets/Pokemon/scripts/Pokemon.gd
-::res://Assets/Pokemon/scripts/::1740594257
+::res://Assets/Monsterpool/::1740596583
+alfinitree.tres::Resource/Pokemon::7568088357784072187::1740596583::0::1::::<><>::res://Assets/Monsterpool/scripts/Pokemon.gd
+neel.tres::Resource/Pokemon::1037599207159063145::1740596583::0::1::::<><>::res://Assets/Monsterpool/scripts/Pokemon.gd
+pandeoin.tres::Resource/Pokemon::2838481964895261221::1740596583::0::1::::<><>::res://Assets/Monsterpool/scripts/Pokemon.gd
+philipottomus.tres::Resource/Pokemon::1602097972685239797::1740596583::0::1::::<><>::res://Assets/Monsterpool/scripts/Pokemon.gd
+quigbat.tres::Resource/Pokemon::8867309257142166582::1740596583::0::1::::<><>::res://Assets/Monsterpool/scripts/Pokemon.gd
+raccoonolly.tres::Resource/Pokemon::1376987449968871554::1740596583::0::1::::<><>::res://Assets/Monsterpool/scripts/Pokemon.gd
+scorcher.tres::Resource/Pokemon::8420304037890950300::1740596583::0::1::::<><>::res://Assets/Monsterpool/scripts/Pokemon.gd
+swandrew.tres::Resource/Pokemon::8736487553846209458::1740596583::0::1::::<><>::res://Assets/Monsterpool/scripts/Pokemon.gd
+vegiraffe.tres::Resource/Pokemon::4675907412755900732::1740596583::0::1::::<><>::res://Assets/Monsterpool/scripts/Pokemon.gd
+::res://Assets/Monsterpool/scripts/::1740594257
 Pokemon.gd::GDScript::-1::1740531285::0::1::::Pokemon<>Resource<>::
+::res://Assets/Movepool/::1740530759
 ::res://Scenes/::1740574660
-::res://Scenes/Battlesim/::1740596576
-BattleSimulator.tscn::PackedScene::5871900312184208718::1740596576::0::1::::<><>::uid://bypoup20pfa6i::::res://Assets/Drawables/Pokemon Images/With Backgrounds/neel.jpg<>uid://byhx7y1a44i6n::::res://Themes/BattleUI.tres<>res://Scenes/Battlesim/tileWorld.gdshader<>uid://ddddcsnk3lyrm::::res://Assets/Drawables/Pokemon Images/With Backgrounds/philipottomus.jpg
-tileWorld.gdshader::Shader::-1::1740596576::0::1::::<><>::
-::res://Scenes/Overworld/::1740596576
-Overworld.tscn::PackedScene::3146343882673881607::1740596576::0::1::::<><>::uid://bf7w1n6mb0h0j::::res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png<>uid://q65lvc2hcvt8::::res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Water/Water.png<>uid://bnvjmj53qsual::::res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Props/Props-All.png<>uid://bgsqmyisr4qyf::::res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Elevation.png<>uid://pqhv4brofxaj::::res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Dirt - simplified.png<>uid://csx18aasi1dqi::::res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Bridge/Bridge_All.png<>uid://dtcns17ns1k32::::res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Fall - simplified.png<>uid://dahnbuxcyo576::::res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Spring - simplified.png<>uid://bhc03ka3pttow::::res://Assets/Drawables/Majoras moon.png<>uid://dvgdkcear4e47::::res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Summer - simplified.png<>uid://bhsuar7jx4f71::::res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Winter - simplified.png<>uid://cb60iekbcep6y::::res://Assets/Drawables/coin.png<>uid://b8cx714dt1l6m::::res://Assets/Drawables/time.png<>uid://d3vniebgosbte::::res://Assets/Drawables/Pokemon Images/No Background/neelNB.jpg<>uid://dgfssxipw6qbi::::res://Assets/Drawables/Pokemon Images/No Background/pandeoinNB.JPG<>uid://dqn5br68ln3cf::::res://Assets/Drawables/Pokemon Images/No Background/alfinitreeNB.jpg<>uid://1eis57xvdvcs::::res://Assets/Drawables/Pokemon Images/No Background/scorcherNB.jpg<>uid://cijd5ecqb3bgy::::res://Assets/Drawables/Pokemon Images/No Background/swandrewNB.jpg<>uid://bpcep5v22u130::::res://Assets/Drawables/Pokemon Images/No Background/philipottomusNB.jpg
-::res://Themes/::1740595251
-BattleUI.tres::Theme::4086858512288104195::1740595251::0::1::::<><>::uid://460xksjrngjk::::res://Themes/coolvetica/Coolvetica Hv Comp.otf<>uid://cvn01gyrfbyvt::::res://Themes/box.png
+::res://Scenes/Battlesim/::1740659760
+BattleSimulator.tscn::PackedScene::5871900312184208718::1740659760::0::1::::<><>::uid://bypoup20pfa6i::::res://Assets/Drawables/Pokemon Images/With Backgrounds/neel.jpg<>uid://byhx7y1a44i6n::::res://Themes/BattleUI.tres<>res://Scenes/Battlesim/tileWorld.gdshader<>uid://ddddcsnk3lyrm::::res://Assets/Drawables/Pokemon Images/With Backgrounds/philipottomus.jpg
+tileWorld.gdshader::Shader::-1::1740659760::0::1::::<><>::
+::res://Scenes/Overworld/::1740659760
+OverworldPlayerMovement.tscn::PackedScene::3146343882673881607::1740659760::0::1::::<><>::uid://bf7w1n6mb0h0j::::res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png<>uid://q65lvc2hcvt8::::res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Water/Water.png<>uid://bnvjmj53qsual::::res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Props/Props-All.png<>uid://pqhv4brofxaj::::res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Dirt - simplified.png<>uid://dtcns17ns1k32::::res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Fall - simplified.png<>uid://dahnbuxcyo576::::res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Spring - simplified.png<>uid://dvgdkcear4e47::::res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Summer - simplified.png<>uid://bhsuar7jx4f71::::res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Winter - simplified.png<>uid://bgsqmyisr4qyf::::res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Elevation.png<>uid://csx18aasi1dqi::::res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Bridge/Bridge_All.png<>uid://bhc03ka3pttow::::res://Assets/Drawables/Majoras moon.png<>uid://cb60iekbcep6y::::res://Assets/Drawables/coin.png<>uid://b8cx714dt1l6m::::res://Assets/Drawables/time.png<>uid://d3vniebgosbte::::res://Assets/Drawables/Pokemon Images/No Background/neelNB.jpg<>uid://dgfssxipw6qbi::::res://Assets/Drawables/Pokemon Images/No Background/pandeoinNB.JPG<>uid://dqn5br68ln3cf::::res://Assets/Drawables/Pokemon Images/No Background/alfinitreeNB.jpg<>uid://1eis57xvdvcs::::res://Assets/Drawables/Pokemon Images/No Background/scorcherNB.jpg<>uid://cijd5ecqb3bgy::::res://Assets/Drawables/Pokemon Images/No Background/swandrewNB.jpg<>uid://bpcep5v22u130::::res://Assets/Drawables/Pokemon Images/No Background/philipottomusNB.jpg
+::res://Scenes/Overworld/Mobs/::1740658078
+::res://Scenes/Overworld/Mobs/Bee/::1740658078
+::res://Scenes/Overworld/Mobs/Bee/Spritesheets/::1740658078
+Bee_Attack.png::CompressedTexture2D::2967662883238723075::1740658078::1740658078::1::::<><>::
+Bee_Death.png::CompressedTexture2D::3855572603178647854::1740658078::1740658078::1::::<><>::
+Bee_FX.png::CompressedTexture2D::6354961161402882950::1740658078::1740658078::1::::<><>::
+Bee_Idle.png::CompressedTexture2D::107269430615116727::1740658078::1740658078::1::::<><>::
+Bee_Walk.png::CompressedTexture2D::613583063842231922::1740658078::1740658078::1::::<><>::
+::res://Scenes/Overworld/Player/::1740658692
+::res://Scenes/Overworld/Player/Sprites/::1740658278
+::res://Scenes/Overworld/Player/Sprites/idle/::1740658279
+hero_idle_DOWN.png::CompressedTexture2D::8251758008514862899::1740658278::1740658279::1::::<><>::
+hero_idle_LEFT.png::CompressedTexture2D::6192904693221037026::1740658278::1740658279::1::::<><>::
+hero_idle_RIGHT.png::CompressedTexture2D::8028647336925906578::1740658278::1740658279::1::::<><>::
+hero_idle_UP.png::CompressedTexture2D::565284720706944806::1740658278::1740658279::1::::<><>::
+::res://Scenes/Overworld/Player/Sprites/walk/::1740658279
+hero_walk_DOWN.png::CompressedTexture2D::3355983489002231328::1740658278::1740658279::1::::<><>::
+hero_walk_LEFT.png::CompressedTexture2D::4108034656429551102::1740658278::1740658279::1::::<><>::
+hero_walk_RIGHT.png::CompressedTexture2D::2369054645710371551::1740658278::1740658279::1::::<><>::
+hero_walk_UP.png::CompressedTexture2D::3653264282297256393::1740658278::1740658279::1::::<><>::
+::res://Themes/::1740659760
+BattleUI.tres::Theme::4086858512288104195::1740659760::0::1::::<><>::uid://460xksjrngjk::::res://Themes/coolvetica/Coolvetica Hv Comp.otf<>uid://cvn01gyrfbyvt::::res://Themes/box.png
 box.png::CompressedTexture2D::6275208703042906677::1740533315::1740594222::1::::<><>::
 ::res://Themes/coolvetica/::1740594222
 Coolvetica Hv Comp.otf::FontFile::2101031727429902060::1740533315::1740594222::1::::<><>::
