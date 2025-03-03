@@ -1,4 +1,4 @@
-[gd_scene load_steps=78 format=4 uid="uid://bk3d3au5o70d4"]
+[gd_scene load_steps=82 format=4 uid="uid://bk3d3au5o70d4"]
 
 [ext_resource type="Texture2D" uid="uid://bf7w1n6mb0h0j" path="res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png" id="1_e2rf7"]
 [ext_resource type="Texture2D" uid="uid://q65lvc2hcvt8" path="res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Water/Water.png" id="2_0l6tn"]
@@ -26,6 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://dqn5br68ln3cf" path="res://Assets/Drawables/Pokemon Images/No Background/alfinitreeNB.jpg" id="16_devb5"]
 [ext_resource type="Texture2D" uid="uid://1eis57xvdvcs" path="res://Assets/Drawables/Pokemon Images/No Background/scorcherNB.jpg" id="17_hxx14"]
 [ext_resource type="Texture2D" uid="uid://cijd5ecqb3bgy" path="res://Assets/Drawables/Pokemon Images/No Background/swandrewNB.jpg" id="18_f3lhg"]
+[ext_resource type="Shader" path="res://Scenes/Battlesim/tileWorld.gdshader" id="19_cixgv"]
 [ext_resource type="Texture2D" uid="uid://bpcep5v22u130" path="res://Assets/Drawables/Pokemon Images/No Background/philipottomusNB.jpg" id="19_s4cy1"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_m7546"]
@@ -465,50 +466,82 @@ texture_region_size = Vector2i(64, 64)
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w70j4"]
 texture = ExtResource("3_tug5x")
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-2.625, 6.375, 2.25, 6.25, 4.375, 5.5, 5.625, 4.625, 6.25, 2.25, 6, -2.75, 5.5, -5.125, 3.625, -6.625, 1.375, -8, -1.75, -8, -4.125, -6.75, -5.875, -4.25, -7, -1.625, -6.375, 3.875, -4.75, 5.25)
 1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3, 6.625, -6.125, 4.75, -5.875, 0.375, -2, -6.5, 1.875, -6.75, 5.625, 0.25, 5.375, 4.375, 3.25, 6.375)
 2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.875, 5.625, 5.625, 5.75, 6.375, 1.625, 6.5, -6.5, -6.375, -6.5, -6.75, 1.5)
 0:1/0 = 0
 1:1/0 = 0
 2:1/0 = 0
 0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4.125, 4.5, -8, 2.5, -6.75, -4.375, 6.75, -5, 8, 2.5, 4.75, 4.5)
 1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-2.25, 4.875, 1.75, 4.875, 6, 3, 6.25, -4, 4.875, -5, -5, -4.875, -5.875, -4, -6, 2.625, -5, 3.75)
 2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.125, -5.125, -6.25, 3.125, -1.625, 5, 2.875, 4.625, 8, -0.625, 3.5, -4.875)
 3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(5.625, -5, -4.375, -5.125, -8, -0.625, -3.875, 3.75, -1.625, 5, 1.75, 4.875, 5.25, 3.25)
 3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.5, 5.5, 5.75, 5.375, 5.875, -8, -5.875, -8)
 3:1/0 = 0
 4:1/0 = 0
 4:0/0 = 0
 5:0/0 = 0
 6:0/0 = 0
 7:0/0 = 0
+7:0/0/z_index = 1
 8:0/0 = 0
+8:0/0/z_index = 1
 9:0/0 = 0
+9:0/0/z_index = 1
 10:0/0 = 0
+10:0/0/z_index = 1
 11:0/0 = 0
+11:0/0/z_index = 1
 12:0/0 = 0
+12:0/0/z_index = 1
 13:0/0 = 0
+13:0/0/z_index = 1
 14:0/0 = 0
+14:0/0/z_index = 1
 14:1/0 = 0
+14:1/0/z_index = 1
 13:1/0 = 0
+13:1/0/z_index = 1
 12:1/0 = 0
+12:1/0/z_index = 1
 11:1/0 = 0
+11:1/0/z_index = 1
 10:1/0 = 0
+10:1/0/z_index = 1
 9:1/0 = 0
+9:1/0/z_index = 1
 8:1/0 = 0
+8:1/0/z_index = 1
 7:1/0 = 0
+7:1/0/z_index = 1
 6:1/0 = 0
 5:1/0 = 0
 4:2/0 = 0
 5:2/0 = 0
 6:2/0 = 0
 7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 4.25, 3.125, 2.625, -3.25, -4.625, -3.25, -8, 8, -8)
 8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 4.125, -3, 2.625, 2.875, -3.25, 3.125, -8, -8, -8)
 9:2/0 = 0
+9:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 4, 2.875, 2.875, -3, -4.25, -3, -8, 8, -8)
 10:2/0 = 0
+10:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 4.5, -3.25, 2.625, 2.75, -3.5, 2.75, -8, -8, -8)
 11:2/0 = 0
+11:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 4.25, 3, 2.875, -3.25, -3.875, -3.25, -8, 8, -8)
 12:2/0 = 0
+12:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 4.25, -3.375, 2.5, 3, -3.625, 2.875, -8, -8, -8)
 13:2/0 = 0
+13:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 4, 3.125, 3, -3.125, -4.25, -3.25, -8, 8, -8)
 14:2/0 = 0
+14:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 4, -3, 2.5, 3, -4.5, 3, -8, -8, -8)
 14:3/0 = 0
 13:3/0 = 0
 12:3/0 = 0
@@ -1021,6 +1054,21 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ilvm"]
 size = Vector2(40, 50.5)
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v5rvf"]
+shader = ExtResource("19_cixgv")
+shader_parameter/spin_rotation = -2.0
+shader_parameter/spin_speed = 10.0
+shader_parameter/offset = Vector2(0, 0)
+shader_parameter/colour_1 = Vector4(0.871, 0.267, 0.231, 1)
+shader_parameter/colour_2 = Vector4(0, 0.42, 0.706, 1)
+shader_parameter/colour_3 = Vector4(0.086, 0.137, 0.145, 1)
+shader_parameter/contrast = 5.0
+shader_parameter/lighting = 0.636
+shader_parameter/spin_amount = 0.071
+shader_parameter/pixel_filter = 1000.0
+shader_parameter/spin_ease = 0.057
+shader_parameter/is_rotate = true
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a7jcc"]
 bg_color = Color(0.835294, 0.196078, 0.113725, 1)
 border_width_left = 6
@@ -1032,6 +1080,8 @@ corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e0gjc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_es8e4"]
 bg_color = Color(0.784783, 0.771285, 0.77466, 1)
@@ -1053,6 +1103,21 @@ corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 100
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k6ppw"]
+shader = ExtResource("19_cixgv")
+shader_parameter/spin_rotation = -2.0
+shader_parameter/spin_speed = 10.0
+shader_parameter/offset = Vector2(0, 0)
+shader_parameter/colour_1 = Vector4(0.871, 0.267, 0.231, 1)
+shader_parameter/colour_2 = Vector4(0, 0.42, 0.706, 1)
+shader_parameter/colour_3 = Vector4(0.086, 0.137, 0.145, 1)
+shader_parameter/contrast = 3.5
+shader_parameter/lighting = 0.4
+shader_parameter/spin_amount = 0.25
+shader_parameter/pixel_filter = 745.0
+shader_parameter/spin_ease = 0.17
+shader_parameter/is_rotate = true
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1qn22"]
 bg_color = Color(0.784783, 0.771285, 0.77466, 1)
@@ -1124,6 +1189,11 @@ scale = Vector2(4, 4)
 tile_map_data = PackedByteArray("AAAEAPz/DAAHAAAAAAAEAP3/DAAHAAEAAAAEAP7/DAAHAAIAAAAFAPz/DAAIAAAAAAAFAP3/DAAIAAEAAAAFAP7/DAAIAAIAAAAHAAAADAAHAAAAAAAHAAEADAAHAAEAAAAHAAIADAAHAAIAAAAIAAAADAAIAAAAAAAIAAEADAAIAAEAAAAIAAIADAAIAAIAAAAOAPz/DAAHAAAAAAAOAP3/DAAHAAEAAAAOAP7/DAAHAAIAAAAPAPz/DAAIAAAAAAAPAP3/DAAIAAEAAAAPAP7/DAAIAAIAAAAVAPv/DAAHAAAAAAAVAPz/DAAHAAEAAAAVAP3/DAAHAAIAAAAWAPv/DAAIAAAAAAAWAPz/DAAIAAEAAAAWAP3/DAAIAAIAAAD6/wAADAAHAAAAAAD6/wEADAAHAAEAAAD6/wIADAAHAAIAAAD7/wAADAAIAAAAAAD7/wEADAAIAAEAAAD7/wIADAAIAAIAAAD5//3/DAAJAAAAAAD5//7/DAAJAAEAAAD5////DAAJAAIAAAD6//3/DAAKAAAAAAD6//7/DAAKAAEAAAD6////DAAKAAIAAAABAA0ADAAJAAAAAAABAA4ADAAJAAEAAAABAA8ADAAJAAIAAAACAA0ADAAKAAAAAAACAA4ADAAKAAEAAAACAA8ADAAKAAIAAAAGAAsADAALAAAAAAAGAAwADAALAAEAAAAGAA0ADAALAAIAAAAHAAsADAAMAAAAAAAHAAwADAAMAAEAAAAHAA0ADAAMAAIAAAAdAP7/DAALAAAAAAAdAP//DAALAAEAAAAdAAAADAALAAIAAAAeAP7/DAAMAAAAAAAeAP//DAAMAAEAAAAeAAAADAAMAAIAAAAbAPv/DAALAAAAAAAbAPz/DAALAAEAAAAbAP3/DAALAAIAAAAcAPv/DAAMAAAAAAAcAPz/DAAMAAEAAAAcAP3/DAAMAAIAAAAfAPr/DAALAAAAAAAfAPv/DAALAAEAAAAfAPz/DAALAAIAAAAgAPr/DAAMAAAAAAAgAPv/DAAMAAEAAAAgAPz/DAAMAAIAAAAmAPv/DAANAAAAAAAmAPz/DAANAAEAAAAnAPv/DAAOAAAAAAAnAPz/DAAOAAEAAAAmAAMADAANAAAAAAAmAAQADAANAAEAAAAmAAUADAANAAIAAAAnAAMADAAOAAAAAAAnAAQADAAOAAEAAAAnAAUADAAOAAIAAAADAAMADAACAAAAAAAFAAMADAABAAIAAAAWAAYADAAHAAYAAAAbAAkADAAHAAYAAAAbAAYADAABAAkAAAAiAAkADAABAAkAAAD8/wYADAABAAkAAAD+/wgADAAAAAkAAAAQAAkADAACAAoAAAAPAAkADAACAAoAAAAMAAgADAACAAoAAAACAAkADAACAAoAAAAWAAkADAACAAoAAAATAAkADAADAAoAAAAMAAkADAADAAoAAAANAAkADAADAAoAAAAGAAkADAAEAAoAAAD7/woADAAEAAoAAAD7/wgADAABAAgAAAAHAAYADAACAAcAAAAHAAcADAACAAgAAAAIAAYADAADAAcAAAAIAAcADAADAAgAAAAeAAYADAACAAcAAAAeAAcADAACAAgAAAAfAAYADAADAAcAAAAfAAcADAADAAgAAADz/w4ADAACAAcAAADz/w8ADAACAAgAAAD0/w4ADAADAAcAAAD0/w8ADAADAAgAAADw/wYADAACAAcAAADw/wcADAACAAgAAADx/wYADAADAAcAAADx/wcADAADAAgAAADy////DAACAAcAAADy/wAADAACAAgAAADz////DAADAAcAAADz/wAADAADAAgAAAD6//X/DAACAAcAAAD6//b/DAACAAgAAAD7//X/DAADAAcAAAD7//b/DAADAAgAAAAIAPf/DAACAAcAAAAIAPj/DAACAAgAAAAJAPf/DAADAAcAAAAJAPj/DAADAAgAAAAWAPX/DAACAAcAAAAWAPb/DAACAAgAAAAXAPX/DAADAAcAAAAXAPb/DAADAAgAAAAkAPf/DAACAAcAAAAkAPj/DAACAAgAAAAlAPf/DAADAAcAAAAlAPj/DAADAAgAAAAtAPr/DAACAAcAAAAtAPv/DAACAAgAAAAuAPr/DAADAAcAAAAuAPv/DAADAAgAAAAfAPj/DAABAAcAAAARAPr/DAABAAcAAAADAPb/DAABAAcAAAD2//v/DAABAAcAAAD0/wIADAABAAcAAADx/wQADAABAAcAAAD0/woADAABAAcAAADx/w0ADAABAAcAAAD2/xIADAABAAcAAAD5/xMADAABAAcAAAD6/xYADAABAAcAAAAAABYADAABAAcAAAAEABgADAABAAcAAAAKABUADAABAAcAAAAQABgADAABAAcAAAAVABUADAABAAcAAAAYABcADAABAAcAAAAeABUADAABAAcAAAAjABcADAABAAcAAAAmAP3/DAANAAIAAAAnAP3/DAAOAAIAAAA=")
 tile_set = SubResource("TileSet_4uiya")
 
+[node name="Bushes(For Battle)" type="TileMapLayer" parent="LayerHolder"]
+scale = Vector2(4, 4)
+tile_map_data = PackedByteArray("AAARAAwADAAJAAQAAAARAA0ADAAJAAQAAAASAAwADAAJAAQAAAASAA0ADAAJAAQAAAATAAwADAAJAAQAAAATAA0ADAAJAAQAAAAVAAAADAAJAAQAAAAVAAEADAAJAAQAAAAWAAAADAAJAAQAAAAWAAEADAAJAAQAAAAXAAAADAAJAAQAAAAXAAEADAAJAAQAAAAYAAAADAAJAAQAAAAYAAEADAAJAAQAAAAZAAAADAAJAAQAAAAZAAEADAAJAAQAAAAaAAAADAAJAAQAAAAaAAEADAAJAAQAAAAZAP//DAAJAAQAAAAaAP//DAAJAAQAAAAbAP7/DAAJAAQAAAAbAP//DAAJAAQAAAAbAAAADAAJAAQAAAAlAP7/DAAKAAQAAAAlAP3/DAAKAAQAAAAmAP7/DAAKAAQAAAAlAAMADAAKAAQAAAAlAAQADAAKAAQAAAAdAAcADAAKAAQAAAAGAA8ADAAIAAQAAAAGABAADAAIAAQAAAAGABEADAAIAAQAAAAHAA8ADAAIAAQAAAAHABAADAAIAAQAAAAHABEADAAIAAQAAAAIAA8ADAAIAAQAAAAIABAADAAIAAQAAAAIABEADAAIAAQAAAAJAA8ADAAIAAQAAAAJABAADAAIAAQAAAAJABEADAAIAAQAAAAKAA8ADAAIAAQAAAAKABAADAAIAAQAAAAKABEADAAIAAQAAAALAA8ADAAIAAQAAAALABAADAAIAAQAAAALABEADAAIAAQAAAAMAA8ADAAIAAQAAAAMABAADAAIAAQAAAAMABEADAAIAAQAAAANAA8ADAAIAAQAAAANABAADAAIAAQAAAANABEADAAIAAQAAAAOAA8ADAAIAAQAAAAOABAADAAIAAQAAAAOABEADAAIAAQAAAAKAA0ADAAIAAQAAAAKAA4ADAAIAAQAAAALAA0ADAAIAAQAAAALAA4ADAAIAAQAAAAMAA0ADAAIAAQAAAAMAA4ADAAIAAQAAAANAA0ADAAIAAQAAAANAA4ADAAIAAQAAAAOAA0ADAAIAAQAAAAOAA4ADAAIAAQAAAAaAA0ADAAIAAQAAAAaAA4ADAAIAAQAAAAaAA8ADAAIAAQAAAAbAA0ADAAIAAQAAAAbAA4ADAAIAAQAAAAbAA8ADAAIAAQAAAAcAA0ADAAIAAQAAAAcAA4ADAAIAAQAAAAcAA8ADAAIAAQAAAAdAA0ADAAIAAQAAAAdAA4ADAAIAAQAAAAdAA8ADAAIAAQAAAAeAA0ADAAIAAQAAAAeAA4ADAAIAAQAAAAeAA8ADAAIAAQAAAAYAA8ADAAIAAQAAAAYABAADAAIAAQAAAAZAA8ADAAIAAQAAAAZABAADAAIAAQAAAAaABAADAAIAAQAAAAZAA4ADAAIAAQAAAAWAAsADAAIAAQAAAAXAAsADAAIAAQAAAAYAAsADAAIAAQAAAAZAAsADAAIAAQAAAAWAAwADAAIAAQAAAAXAAwADAAIAAQAAAAWAA0ADAAIAAQAAAARAA8ADAAIAAQAAAARABAADAAIAAQAAAASAA8ADAAIAAQAAAASABAADAAIAAQAAAATAA8ADAAIAAQAAAATABAADAAIAAQAAAAUAA8ADAAIAAQAAAAUABAADAAIAAQAAAAVAA8ADAAIAAQAAAAVABAADAAIAAQAAAAWAA8ADAAIAAQAAAAWABAADAAIAAQAAAAQAA8ADAAIAAQAAAAQABAADAAIAAQAAAAHAPz/DAAHAAQAAAAIAPz/DAAHAAQAAAAJAPz/DAAHAAQAAAAKAPz/DAAHAAQAAAALAPz/DAAHAAQAAAAMAPz/DAAHAAQAAAAHAP3/DAAHAAQAAAAIAP3/DAAHAAQAAAAJAP3/DAAHAAQAAAAKAP3/DAAHAAQAAAD9//z/DAAHAAQAAAD+//z/DAAHAAQAAAD///z/DAAHAAQAAAAAAPz/DAAHAAQAAAD8/wAADAAHAAQAAAD8/wEADAAHAAQAAAD8/wIADAAHAAQAAAD9/wAADAAHAAQAAAD9/wEADAAHAAQAAAD9/wIADAAHAAQAAAD8//7/DAAHAAQAAAD8////DAAHAAQAAAD8//z/DAAHAAQAAAD1/wUADAAHAAQAAAD1/wYADAAHAAQAAAD1/wcADAAHAAQAAAD1/wgADAAHAAQAAAD1/wkADAAHAAQAAAD2/wUADAAHAAQAAAD2/wYADAAHAAQAAAD2/wcADAAHAAQAAAD2/wgADAAHAAQAAAD2/wkADAAHAAQAAAD3/wUADAAHAAQAAAD3/wYADAAHAAQAAAD3/wcADAAHAAQAAAD3/wgADAAHAAQAAAD3/wkADAAHAAQAAAD4/wUADAAHAAQAAAD4/wYADAAHAAQAAAD4/wcADAAHAAQAAAD4/wgADAAHAAQAAAD4/wkADAAHAAQAAAD0/wQADAAHAAQAAAD0/wUADAAHAAQAAAD1/wQADAAHAAQAAAD2/wQADAAHAAQAAAD3/wQADAAHAAQAAAD4/wQADAAHAAQAAAD0/wYADAAHAAQAAAA=")
+tile_set = SubResource("TileSet_4uiya")
+
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(32, 16)
 script = SubResource("GDScript_km0ab")
@@ -1145,6 +1215,7 @@ shape = SubResource("RectangleShape2D_5ilvm")
 position = Vector2(160, -20)
 
 [node name="UI" type="Control" parent="Player/Camera"]
+z_index = 2
 layout_mode = 3
 anchors_preset = 0
 offset_left = 32.0
@@ -1154,6 +1225,7 @@ offset_bottom = 72.0
 metadata/_edit_use_anchors_ = true
 
 [node name="PlayerInfoBox" type="Panel" parent="Player/Camera/UI"]
+material = SubResource("ShaderMaterial_v5rvf")
 layout_mode = 0
 offset_left = -824.0
 offset_top = -472.0
@@ -1163,6 +1235,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_a7jcc")
 metadata/_edit_use_anchors_ = true
 
 [node name="UserFrame" type="Panel" parent="Player/Camera/UI/PlayerInfoBox"]
+material = SubResource("ShaderMaterial_e0gjc")
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -1301,6 +1374,7 @@ text = "Fucking Monday"
 metadata/_edit_use_anchors_ = true
 
 [node name="PlayerPartyBox" type="Panel" parent="Player/Camera/UI"]
+material = SubResource("ShaderMaterial_k6ppw")
 layout_mode = 0
 offset_left = -360.0
 offset_top = -472.0

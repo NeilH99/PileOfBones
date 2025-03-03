@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=4 uid="uid://b22chdnlki22v"]
+[gd_scene load_steps=45 format=4 uid="uid://c2oxfqsdckb1g"]
 
 [ext_resource type="Texture2D" uid="uid://bf7w1n6mb0h0j" path="res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png" id="1_ob3mh"]
 [ext_resource type="Texture2D" uid="uid://q65lvc2hcvt8" path="res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Water/Water.png" id="2_0j00y"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cb60iekbcep6y" path="res://Assets/Drawables/coin.png" id="8_p6apk"]
 [ext_resource type="Texture2D" uid="uid://b8cx714dt1l6m" path="res://Assets/Drawables/time.png" id="9_h5rum"]
 [ext_resource type="Texture2D" uid="uid://d3vniebgosbte" path="res://Assets/Drawables/Pokemon Images/No Background/neelNB.jpg" id="10_dnp15"]
+[ext_resource type="Shader" path="res://Scenes/Battlesim/tileWorld.gdshader" id="11_7mf15"]
 [ext_resource type="Texture2D" uid="uid://dgfssxipw6qbi" path="res://Assets/Drawables/Pokemon Images/No Background/pandeoinNB.JPG" id="11_m1oc4"]
 [ext_resource type="Texture2D" uid="uid://dqn5br68ln3cf" path="res://Assets/Drawables/Pokemon Images/No Background/alfinitreeNB.jpg" id="12_y84kx"]
 [ext_resource type="Texture2D" uid="uid://1eis57xvdvcs" path="res://Assets/Drawables/Pokemon Images/No Background/scorcherNB.jpg" id="13_bs8y3"]
@@ -432,7 +433,6 @@ func _physics_process(delta: float) -> void:
 "
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dj3ev"]
-load_path = "res://.godot/imported/icon.svg-22ca46ad79075e677a21c492cd6e4f87.ctex"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ilvm"]
 size = Vector2(69, 61)
@@ -448,6 +448,21 @@ corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k53tv"]
+shader = ExtResource("11_7mf15")
+shader_parameter/spin_rotation = -2.0
+shader_parameter/spin_speed = 10.0
+shader_parameter/offset = Vector2(0, 0)
+shader_parameter/colour_1 = Vector4(0.871, 0.267, 0.231, 1)
+shader_parameter/colour_2 = Vector4(0, 0.42, 0.706, 1)
+shader_parameter/colour_3 = Vector4(0.086, 0.137, 0.145, 1)
+shader_parameter/contrast = 3.5
+shader_parameter/lighting = 0.4
+shader_parameter/spin_amount = 0.25
+shader_parameter/pixel_filter = 745.0
+shader_parameter/spin_ease = 1.0
+shader_parameter/is_rotate = false
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_es8e4"]
 bg_color = Color(0.784783, 0.771285, 0.77466, 1)
@@ -563,6 +578,15 @@ offset_right = -376.0
 offset_bottom = -280.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_a7jcc")
 metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Player/Camera/UI/PlayerInfoBox"]
+z_index = 1
+material = SubResource("ShaderMaterial_k53tv")
+layout_mode = 0
+offset_left = 5.0
+offset_top = 4.0
+offset_right = 442.0
+offset_bottom = 190.0
 
 [node name="UserFrame" type="Panel" parent="Player/Camera/UI/PlayerInfoBox"]
 layout_mode = 1
