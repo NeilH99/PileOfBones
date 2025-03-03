@@ -1,3 +1,4 @@
+ProgressBar
 TextureRect
 VBoxContainer
 AnimatedSprite2D
@@ -11,4 +12,3 @@ GridContainer
 CanvasLayer
 TileMapLayer
 Sprite2D
-Camera2D

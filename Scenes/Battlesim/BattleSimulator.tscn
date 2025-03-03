@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://cpwnltlbm8pv7"]
+[gd_scene load_steps=10 format=3 uid="uid://cpwnltlbm8pv7"]
 
 [ext_resource type="Script" path="res://Scenes/Battlesim/scripts/battle_simulator.gd" id="1_6k6vr"]
 [ext_resource type="Texture2D" uid="uid://bypoup20pfa6i" path="res://Assets/Drawables/Pokemon Images/With Backgrounds/neel.jpg" id="3_6ekmt"]
 [ext_resource type="Theme" uid="uid://byhx7y1a44i6n" path="res://Themes/BattleUI.tres" id="3_xv0ka"]
 [ext_resource type="Shader" path="res://Scenes/Battlesim/tileWorld.gdshader" id="4_1bdv3"]
 [ext_resource type="Texture2D" uid="uid://ddddcsnk3lyrm" path="res://Assets/Drawables/Pokemon Images/With Backgrounds/philipottomus.jpg" id="4_dwiux"]
+[ext_resource type="Script" path="res://Scenes/Battlesim/scripts/player_health_bar.gd" id="4_j2q2b"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qvhr1"]
 shader = ExtResource("4_1bdv3")
@@ -20,6 +21,12 @@ shader_parameter/spin_amount = 0.25
 shader_parameter/pixel_filter = 745.0
 shader_parameter/spin_ease = 1.0
 shader_parameter/is_rotate = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c3doy"]
+bg_color = Color(0.325441, 0.325441, 0.325441, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dysca"]
+bg_color = Color(0.121569, 0.678431, 0.215686, 1)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_6k6vr")
@@ -43,6 +50,17 @@ layout_mode = 2
 size_flags_vertical = 3
 texture = ExtResource("3_6ekmt")
 expand_mode = 1
+
+[node name="PlayerHealthBar" type="ProgressBar" parent="CanvasLayer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+theme_override_font_sizes/font_size = 31
+theme_override_styles/background = SubResource("StyleBoxFlat_c3doy")
+theme_override_styles/fill = SubResource("StyleBoxFlat_dysca")
+value = 90.0
+script = ExtResource("4_j2q2b")
 
 [node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2

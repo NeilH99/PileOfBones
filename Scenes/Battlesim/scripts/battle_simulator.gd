@@ -1,6 +1,7 @@
 extends Node2D
 
 var fightBtnHandler = preload("res://Scenes/Battlesim/scripts/fightBtnHandler.gd").new()
+var playerHealth = preload("res://Scenes/Battlesim/scripts/player_health_bar.gd").new()
 
 func _ready():
 	# Connect Button1's pressed signal
@@ -54,14 +55,11 @@ func backBtnPressed(fightBtn, bagBtn, pokemonBtn, runBtn):
 	$CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Fight.pressed.connect(_on_fight_pressed)
 
 func generatePokemon():
-	var pokeImg = $CanvasLayer/VBoxContainer/PlaceHolder.duplicate()
-	$CanvasLayer/VBoxContainer/PlaceHolder.queue_free()
-	
 	var pokeImgFolder = get_files_in_folder("res://Assets/Drawables/Pokemon Images/With Backgrounds/")
-	pokeImg.texture = load("res://Assets/Drawables/Pokemon Images/With Backgrounds/" + pokeImgFolder.pick_random())
+	$CanvasLayer/VBoxContainer/PlaceHolder.texture = load("res://Assets/Drawables/Pokemon Images/With Backgrounds/" + pokeImgFolder.pick_random())
 	
-	$CanvasLayer/VBoxContainer.add_child(pokeImg)
-	$CanvasLayer/VBoxContainer.move_child(pokeImg, 0)
+	playerHealth.setHealth(100)
+	
 
 func get_files_in_folder(path: String) -> Array:
 	var dir := DirAccess.open(path)
