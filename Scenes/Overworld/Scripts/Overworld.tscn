@@ -1,39 +1,40 @@
-[gd_scene load_steps=82 format=4 uid="uid://bk3d3au5o70d4"]
+[gd_scene load_steps=83 format=4 uid="uid://bk3d3au5o70d4"]
 
-[ext_resource type="Texture2D" uid="uid://bf7w1n6mb0h0j" path="res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png" id="1_e2rf7"]
-[ext_resource type="Texture2D" uid="uid://q65lvc2hcvt8" path="res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Water/Water.png" id="2_0l6tn"]
-[ext_resource type="Texture2D" uid="uid://bnvjmj53qsual" path="res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Props/Props-All.png" id="3_tug5x"]
-[ext_resource type="Texture2D" uid="uid://pqhv4brofxaj" path="res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Dirt - simplified.png" id="4_k4mkk"]
-[ext_resource type="Texture2D" uid="uid://dtcns17ns1k32" path="res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Fall - simplified.png" id="5_6e5gy"]
-[ext_resource type="Texture2D" uid="uid://dahnbuxcyo576" path="res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Spring - simplified.png" id="6_5mmrf"]
-[ext_resource type="Texture2D" uid="uid://dvgdkcear4e47" path="res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Summer - simplified.png" id="7_fj3ny"]
-[ext_resource type="Texture2D" uid="uid://bhsuar7jx4f71" path="res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Winter - simplified.png" id="8_jg4tc"]
-[ext_resource type="Texture2D" uid="uid://bgsqmyisr4qyf" path="res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Elevation.png" id="9_0d2ix"]
-[ext_resource type="Texture2D" uid="uid://csx18aasi1dqi" path="res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Bridge/Bridge_All.png" id="10_0kpyr"]
-[ext_resource type="Texture2D" uid="uid://bn2ws700pr177" path="res://Scenes/Overworld/Player/Sprites/walk/hero_walk_DOWN.png" id="11_leveh"]
-[ext_resource type="Texture2D" uid="uid://bhc03ka3pttow" path="res://Assets/Drawables/Majoras moon.png" id="11_o13mr"]
-[ext_resource type="Texture2D" uid="uid://dpthipu72y5vb" path="res://Scenes/Overworld/Player/Sprites/idle/hero_idle_DOWN.png" id="11_o28mr"]
-[ext_resource type="Texture2D" uid="uid://byr7y3trdxh55" path="res://Scenes/Overworld/Player/Sprites/walk/hero_walk_LEFT.png" id="12_3v1ne"]
-[ext_resource type="Texture2D" uid="uid://cuh5iaigw2xti" path="res://Scenes/Overworld/Player/Sprites/idle/hero_idle_LEFT.png" id="12_12bw4"]
-[ext_resource type="Texture2D" uid="uid://cb60iekbcep6y" path="res://Assets/Drawables/coin.png" id="12_emqcm"]
-[ext_resource type="Texture2D" uid="uid://80t8pm42tut8" path="res://Scenes/Overworld/Player/Sprites/walk/hero_walk_RIGHT.png" id="13_5nt3r"]
-[ext_resource type="Texture2D" uid="uid://dmnewb3d2ffu5" path="res://Scenes/Overworld/Player/Sprites/idle/hero_idle_RIGHT.png" id="13_58jew"]
-[ext_resource type="Texture2D" uid="uid://b8cx714dt1l6m" path="res://Assets/Drawables/time.png" id="13_d8ky4"]
-[ext_resource type="Texture2D" uid="uid://ib3flhlirigs" path="res://Scenes/Overworld/Player/Sprites/idle/hero_idle_UP.png" id="14_76y1m"]
-[ext_resource type="Texture2D" uid="uid://bsbwy1x4l0pun" path="res://Scenes/Overworld/Player/Sprites/walk/hero_walk_UP.png" id="14_c3cmh"]
-[ext_resource type="Texture2D" uid="uid://d3vniebgosbte" path="res://Assets/Drawables/Pokemon Images/No Background/neelNB.jpg" id="14_jsj44"]
-[ext_resource type="Texture2D" uid="uid://dgfssxipw6qbi" path="res://Assets/Drawables/Pokemon Images/No Background/pandeoinNB.JPG" id="15_81si1"]
-[ext_resource type="Texture2D" uid="uid://dqn5br68ln3cf" path="res://Assets/Drawables/Pokemon Images/No Background/alfinitreeNB.jpg" id="16_devb5"]
-[ext_resource type="Texture2D" uid="uid://1eis57xvdvcs" path="res://Assets/Drawables/Pokemon Images/No Background/scorcherNB.jpg" id="17_hxx14"]
-[ext_resource type="Texture2D" uid="uid://cijd5ecqb3bgy" path="res://Assets/Drawables/Pokemon Images/No Background/swandrewNB.jpg" id="18_f3lhg"]
-[ext_resource type="Shader" path="res://Scenes/Battlesim/tileWorld.gdshader" id="19_cixgv"]
-[ext_resource type="Texture2D" uid="uid://bpcep5v22u130" path="res://Assets/Drawables/Pokemon Images/No Background/philipottomusNB.jpg" id="19_s4cy1"]
+[ext_resource type="Texture2D" uid="uid://bf7w1n6mb0h0j" path="res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png" id="1_yqpkp"]
+[ext_resource type="Texture2D" uid="uid://q65lvc2hcvt8" path="res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Water/Water.png" id="2_c8feh"]
+[ext_resource type="Texture2D" uid="uid://bnvjmj53qsual" path="res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Props/Props-All.png" id="3_qx33q"]
+[ext_resource type="Texture2D" uid="uid://pqhv4brofxaj" path="res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Dirt - simplified.png" id="4_0mvy3"]
+[ext_resource type="Texture2D" uid="uid://dtcns17ns1k32" path="res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Fall - simplified.png" id="5_ugsj0"]
+[ext_resource type="Texture2D" uid="uid://dahnbuxcyo576" path="res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Spring - simplified.png" id="6_sa8r1"]
+[ext_resource type="Texture2D" uid="uid://dvgdkcear4e47" path="res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Summer - simplified.png" id="7_0avo1"]
+[ext_resource type="Texture2D" uid="uid://bhsuar7jx4f71" path="res://Assets/Drawables/Hana Caraka - Topdown Tileset [sample]/Tileset/Winter - simplified.png" id="8_66a6q"]
+[ext_resource type="Texture2D" uid="uid://bgsqmyisr4qyf" path="res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Elevation.png" id="9_3lojp"]
+[ext_resource type="Texture2D" uid="uid://csx18aasi1dqi" path="res://Assets/Drawables/Tiny Swords (Update 010)/Terrain/Bridge/Bridge_All.png" id="10_sw7cd"]
+[ext_resource type="Shader" path="res://Scenes/Battlesim/tileWorld.gdshader" id="11_3rjji"]
+[ext_resource type="Script" path="res://Scenes/Overworld/Scripts/player.gd" id="11_qvpwr"]
+[ext_resource type="Texture2D" uid="uid://dpthipu72y5vb" path="res://Scenes/Overworld/Player/Sprites/idle/hero_idle_DOWN.png" id="12_2vmws"]
+[ext_resource type="Texture2D" uid="uid://bhc03ka3pttow" path="res://Assets/Drawables/Majoras moon.png" id="12_tko77"]
+[ext_resource type="Texture2D" uid="uid://cb60iekbcep6y" path="res://Assets/Drawables/coin.png" id="13_bhhor"]
+[ext_resource type="Texture2D" uid="uid://cuh5iaigw2xti" path="res://Scenes/Overworld/Player/Sprites/idle/hero_idle_LEFT.png" id="13_n0xn6"]
+[ext_resource type="Texture2D" uid="uid://b8cx714dt1l6m" path="res://Assets/Drawables/time.png" id="14_e818f"]
+[ext_resource type="Texture2D" uid="uid://dmnewb3d2ffu5" path="res://Scenes/Overworld/Player/Sprites/idle/hero_idle_RIGHT.png" id="14_nj1io"]
+[ext_resource type="Texture2D" uid="uid://d3vniebgosbte" path="res://Assets/Drawables/Pokemon Images/No Background/neelNB.jpg" id="15_2kndl"]
+[ext_resource type="Texture2D" uid="uid://ib3flhlirigs" path="res://Scenes/Overworld/Player/Sprites/idle/hero_idle_UP.png" id="15_5pq23"]
+[ext_resource type="Texture2D" uid="uid://dgfssxipw6qbi" path="res://Assets/Drawables/Pokemon Images/No Background/pandeoinNB.JPG" id="16_2wb11"]
+[ext_resource type="Texture2D" uid="uid://bn2ws700pr177" path="res://Scenes/Overworld/Player/Sprites/walk/hero_walk_DOWN.png" id="16_etj5j"]
+[ext_resource type="Texture2D" uid="uid://byr7y3trdxh55" path="res://Scenes/Overworld/Player/Sprites/walk/hero_walk_LEFT.png" id="17_hlljy"]
+[ext_resource type="Texture2D" uid="uid://dqn5br68ln3cf" path="res://Assets/Drawables/Pokemon Images/No Background/alfinitreeNB.jpg" id="17_pihf5"]
+[ext_resource type="Texture2D" uid="uid://1eis57xvdvcs" path="res://Assets/Drawables/Pokemon Images/No Background/scorcherNB.jpg" id="18_3s8s6"]
+[ext_resource type="Texture2D" uid="uid://80t8pm42tut8" path="res://Scenes/Overworld/Player/Sprites/walk/hero_walk_RIGHT.png" id="18_k1qde"]
+[ext_resource type="Texture2D" uid="uid://bsbwy1x4l0pun" path="res://Scenes/Overworld/Player/Sprites/walk/hero_walk_UP.png" id="19_7gclm"]
+[ext_resource type="Texture2D" uid="uid://cijd5ecqb3bgy" path="res://Assets/Drawables/Pokemon Images/No Background/swandrewNB.jpg" id="19_xhnno"]
+[ext_resource type="Texture2D" uid="uid://bpcep5v22u130" path="res://Assets/Drawables/Pokemon Images/No Background/philipottomusNB.jpg" id="20_kaybn"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_m7546"]
 tile_data = PackedInt32Array(0, 65536, 0, 65536, 65536, 1, 131072, 65536, 1, 196608, 65536, 1, 262144, 65536, 1, 327680, 65536, 1, 393216, 65536, 1, 458752, 65536, 1, 524288, 65536, 2, 1, 65536, 0, 65537, 65536, 1, 131073, 65536, 1, 196609, 65536, 1, 262145, 65536, 1, 327681, 65536, 1, 393217, 65536, 1, 458753, 65536, 1, 524289, 65536, 2, 2, 65536, 0, 65538, 65536, 1, 131074, 65536, 1, 196610, 65536, 1, 262146, 65536, 1, 327682, 65536, 1, 393218, 65536, 1, 458754, 65536, 1, 524290, 65536, 2, 3, 65536, 0, 65539, 65536, 1, 131075, 65536, 1, 196611, 65536, 1, 262147, 65536, 1, 327683, 65536, 1, 393219, 65536, 1, 458755, 65536, 1, 524291, 65536, 2, 4, 65536, 0, 65540, 65536, 1, 131076, 65536, 1, 196612, 65536, 1, 262148, 65536, 1, 327684, 65536, 1, 393220, 65536, 1, 458756, 65536, 1, 524292, 65536, 2, 5, 65536, 0, 65541, 65536, 1, 131077, 65536, 1, 196613, 65536, 1, 262149, 65536, 1, 327685, 65536, 1, 393221, 65536, 1, 458757, 65536, 1, 524293, 65536, 2, 6, 65536, 0, 65542, 65536, 1, 131078, 65536, 1, 196614, 65536, 1, 262150, 65536, 1, 327686, 65536, 1, 393222, 65536, 1, 458758, 65536, 1, 524294, 65536, 2, 7, 65536, 0, 65543, 65536, 1, 131079, 65536, 1, 196615, 65536, 1, 262151, 65536, 1, 327687, 65536, 1, 393223, 65536, 1, 458759, 65536, 1, 524295, 65536, 2)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5nhtv"]
-texture = ExtResource("1_e2rf7")
+texture = ExtResource("1_yqpkp")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 1:0/0 = 0
@@ -71,7 +72,7 @@ texture_region_size = Vector2i(64, 64)
 8:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tqtrr"]
-texture = ExtResource("2_0l6tn")
+texture = ExtResource("2_c8feh")
 texture_region_size = Vector2i(64, 64)
 0:0/next_alternative_id = 2
 0:0/0 = 0
@@ -79,7 +80,7 @@ texture_region_size = Vector2i(64, 64)
 0:0/1 = 1
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t75d7"]
-texture = ExtResource("3_tug5x")
+texture = ExtResource("3_qx33q")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -262,7 +263,7 @@ texture = ExtResource("3_tug5x")
 0:11/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s6p6d"]
-texture = ExtResource("4_k4mkk")
+texture = ExtResource("4_0mvy3")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -285,7 +286,7 @@ texture = ExtResource("4_k4mkk")
 0:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bvyad"]
-texture = ExtResource("5_6e5gy")
+texture = ExtResource("5_ugsj0")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -303,7 +304,7 @@ texture = ExtResource("5_6e5gy")
 4:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bpj1j"]
-texture = ExtResource("6_5mmrf")
+texture = ExtResource("6_sa8r1")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -321,7 +322,7 @@ texture = ExtResource("6_5mmrf")
 4:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yk1q4"]
-texture = ExtResource("7_fj3ny")
+texture = ExtResource("7_0avo1")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -339,7 +340,7 @@ texture = ExtResource("7_fj3ny")
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0fb76"]
-texture = ExtResource("8_jg4tc")
+texture = ExtResource("8_66a6q")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -357,7 +358,7 @@ texture = ExtResource("8_jg4tc")
 4:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u58qb"]
-texture = ExtResource("9_0d2ix")
+texture = ExtResource("9_3lojp")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 1:0/0 = 0
@@ -389,7 +390,7 @@ texture_region_size = Vector2i(64, 64)
 3:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mrxtn"]
-texture = ExtResource("10_0kpyr")
+texture = ExtResource("10_sw7cd")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 1:0/0 = 0
@@ -418,7 +419,7 @@ sources/17 = SubResource("TileSetAtlasSource_0fb76")
 pattern_0 = SubResource("TileMapPattern_m7546")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eiqf5"]
-texture = ExtResource("1_e2rf7")
+texture = ExtResource("1_yqpkp")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 1:0/0 = 0
@@ -456,7 +457,7 @@ texture_region_size = Vector2i(64, 64)
 8:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wxwmq"]
-texture = ExtResource("2_0l6tn")
+texture = ExtResource("2_c8feh")
 texture_region_size = Vector2i(64, 64)
 0:0/next_alternative_id = 2
 0:0/0 = 0
@@ -464,7 +465,7 @@ texture_region_size = Vector2i(64, 64)
 0:0/1 = 1
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w70j4"]
-texture = ExtResource("3_tug5x")
+texture = ExtResource("3_qx33q")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-2.625, 6.375, 2.25, 6.25, 4.375, 5.5, 5.625, 4.625, 6.25, 2.25, 6, -2.75, 5.5, -5.125, 3.625, -6.625, 1.375, -8, -1.75, -8, -4.125, -6.75, -5.875, -4.25, -7, -1.625, -6.375, 3.875, -4.75, 5.25)
 1:0/0 = 0
@@ -679,7 +680,7 @@ texture = ExtResource("3_tug5x")
 0:11/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2lo1s"]
-texture = ExtResource("4_k4mkk")
+texture = ExtResource("4_0mvy3")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -702,7 +703,7 @@ texture = ExtResource("4_k4mkk")
 0:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jk7rn"]
-texture = ExtResource("5_6e5gy")
+texture = ExtResource("5_ugsj0")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -720,7 +721,7 @@ texture = ExtResource("5_6e5gy")
 4:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s0xwt"]
-texture = ExtResource("6_5mmrf")
+texture = ExtResource("6_sa8r1")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -738,7 +739,7 @@ texture = ExtResource("6_5mmrf")
 4:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sc48h"]
-texture = ExtResource("7_fj3ny")
+texture = ExtResource("7_0avo1")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -756,7 +757,7 @@ texture = ExtResource("7_fj3ny")
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mywc8"]
-texture = ExtResource("8_jg4tc")
+texture = ExtResource("8_66a6q")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -774,7 +775,7 @@ texture = ExtResource("8_jg4tc")
 4:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ch1ra"]
-texture = ExtResource("9_0d2ix")
+texture = ExtResource("9_3lojp")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 1:0/0 = 0
@@ -806,7 +807,7 @@ texture_region_size = Vector2i(64, 64)
 3:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_emh1w"]
-texture = ExtResource("10_0kpyr")
+texture = ExtResource("10_sw7cd")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 1:0/0 = 0
@@ -833,126 +834,77 @@ sources/16 = SubResource("TileSetAtlasSource_sc48h")
 sources/17 = SubResource("TileSetAtlasSource_mywc8")
 pattern_0 = SubResource("TileMapPattern_m7546")
 
-[sub_resource type="GDScript" id="GDScript_km0ab"]
-script/source = "extends CharacterBody2D
-
-@export var speed: float = 400.0  # Movement speed
-@onready var _animated_sprite = $AnimatedSprite2D
-
-var tempDirection = 3
-
-func _physics_process(delta: float) -> void:
-	var direction := Vector2.ZERO
-
-	if Input.is_action_pressed(\"ui_right\") or Input.is_action_pressed(\"move_right\"):
-		direction = Vector2.RIGHT
-	elif Input.is_action_pressed(\"ui_left\") or Input.is_action_pressed(\"move_left\"):
-		direction = Vector2.LEFT
-	elif Input.is_action_pressed(\"ui_down\") or Input.is_action_pressed(\"move_down\"):
-		direction = Vector2.DOWN
-	elif Input.is_action_pressed(\"ui_up\") or Input.is_action_pressed(\"move_up\"):
-		direction = Vector2.UP
-
-	direction = direction.normalized()  # Prevent faster diagonal movement
-	velocity = direction * speed
-
-	move_and_slide()
-	update_animation(direction)
-
-func update_animation(direction: Vector2):
-	if direction != Vector2.ZERO:
-		if direction == Vector2.RIGHT:
-			_animated_sprite.play(\"MoveRight\")
-			tempDirection = 1
-		elif direction == Vector2.LEFT:
-			_animated_sprite.play(\"MoveLeft\")
-			tempDirection = 2
-		elif direction == Vector2.DOWN:
-			_animated_sprite.play(\"MoveDown\")
-			tempDirection = 3
-		elif direction == Vector2.UP:
-			_animated_sprite.play(\"MoveUp\")
-			tempDirection = 4
-	else:
-		match tempDirection:
-			1: _animated_sprite.play(\"IdleRight\")
-			2: _animated_sprite.play(\"IdleLeft\")
-			3: _animated_sprite.play(\"IdleDown\")
-			4: _animated_sprite.play(\"IdleUp\")
-	
-	
-			
-"
+[sub_resource type="GDScript" id="GDScript_rh6eg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u7yqo"]
-atlas = ExtResource("11_leveh")
+atlas = ExtResource("16_etj5j")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7r704"]
-atlas = ExtResource("11_leveh")
+atlas = ExtResource("16_etj5j")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p183u"]
-atlas = ExtResource("11_leveh")
+atlas = ExtResource("16_etj5j")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3twxm"]
-atlas = ExtResource("11_leveh")
+atlas = ExtResource("16_etj5j")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lfio8"]
-atlas = ExtResource("12_3v1ne")
+atlas = ExtResource("17_hlljy")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l0dn0"]
-atlas = ExtResource("12_3v1ne")
+atlas = ExtResource("17_hlljy")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wqvd2"]
-atlas = ExtResource("12_3v1ne")
+atlas = ExtResource("17_hlljy")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fpbv2"]
-atlas = ExtResource("12_3v1ne")
+atlas = ExtResource("17_hlljy")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hp2nn"]
-atlas = ExtResource("13_5nt3r")
+atlas = ExtResource("18_k1qde")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ncjfg"]
-atlas = ExtResource("13_5nt3r")
+atlas = ExtResource("18_k1qde")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uyid3"]
-atlas = ExtResource("13_5nt3r")
+atlas = ExtResource("18_k1qde")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b48mq"]
-atlas = ExtResource("13_5nt3r")
+atlas = ExtResource("18_k1qde")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y0p1n"]
-atlas = ExtResource("14_c3cmh")
+atlas = ExtResource("19_7gclm")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g4lq0"]
-atlas = ExtResource("14_c3cmh")
+atlas = ExtResource("19_7gclm")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d3xg6"]
-atlas = ExtResource("14_c3cmh")
+atlas = ExtResource("19_7gclm")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_04r5c"]
-atlas = ExtResource("14_c3cmh")
+atlas = ExtResource("19_7gclm")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ibemr"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("11_o28mr")
+"texture": ExtResource("12_2vmws")
 }],
 "loop": true,
 "name": &"IdleDown",
@@ -960,7 +912,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("12_12bw4")
+"texture": ExtResource("13_n0xn6")
 }],
 "loop": true,
 "name": &"IdleLeft",
@@ -968,7 +920,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("13_58jew")
+"texture": ExtResource("14_nj1io")
 }],
 "loop": true,
 "name": &"IdleRight",
@@ -976,7 +928,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("14_76y1m")
+"texture": ExtResource("15_5pq23")
 }],
 "loop": true,
 "name": &"IdleUp",
@@ -1055,7 +1007,7 @@ animations = [{
 size = Vector2(40, 50.5)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_v5rvf"]
-shader = ExtResource("19_cixgv")
+shader = ExtResource("11_3rjji")
 shader_parameter/spin_rotation = -2.0
 shader_parameter/spin_speed = 10.0
 shader_parameter/offset = Vector2(0, 0)
@@ -1105,7 +1057,7 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 100
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_k6ppw"]
-shader = ExtResource("19_cixgv")
+shader = ExtResource("11_3rjji")
 shader_parameter/spin_rotation = -2.0
 shader_parameter/spin_speed = 10.0
 shader_parameter/offset = Vector2(0, 0)
@@ -1193,10 +1145,12 @@ tile_set = SubResource("TileSet_4uiya")
 scale = Vector2(4, 4)
 tile_map_data = PackedByteArray("AAARAAwADAAJAAQAAAARAA0ADAAJAAQAAAASAAwADAAJAAQAAAASAA0ADAAJAAQAAAATAAwADAAJAAQAAAATAA0ADAAJAAQAAAAVAAAADAAJAAQAAAAVAAEADAAJAAQAAAAWAAAADAAJAAQAAAAWAAEADAAJAAQAAAAXAAAADAAJAAQAAAAXAAEADAAJAAQAAAAYAAAADAAJAAQAAAAYAAEADAAJAAQAAAAZAAAADAAJAAQAAAAZAAEADAAJAAQAAAAaAAAADAAJAAQAAAAaAAEADAAJAAQAAAAZAP//DAAJAAQAAAAaAP//DAAJAAQAAAAbAP7/DAAJAAQAAAAbAP//DAAJAAQAAAAbAAAADAAJAAQAAAAlAP7/DAAKAAQAAAAlAP3/DAAKAAQAAAAmAP7/DAAKAAQAAAAlAAMADAAKAAQAAAAlAAQADAAKAAQAAAAdAAcADAAKAAQAAAAGAA8ADAAIAAQAAAAGABAADAAIAAQAAAAGABEADAAIAAQAAAAHAA8ADAAIAAQAAAAHABAADAAIAAQAAAAHABEADAAIAAQAAAAIAA8ADAAIAAQAAAAIABAADAAIAAQAAAAIABEADAAIAAQAAAAJAA8ADAAIAAQAAAAJABAADAAIAAQAAAAJABEADAAIAAQAAAAKAA8ADAAIAAQAAAAKABAADAAIAAQAAAAKABEADAAIAAQAAAALAA8ADAAIAAQAAAALABAADAAIAAQAAAALABEADAAIAAQAAAAMAA8ADAAIAAQAAAAMABAADAAIAAQAAAAMABEADAAIAAQAAAANAA8ADAAIAAQAAAANABAADAAIAAQAAAANABEADAAIAAQAAAAOAA8ADAAIAAQAAAAOABAADAAIAAQAAAAOABEADAAIAAQAAAAKAA0ADAAIAAQAAAAKAA4ADAAIAAQAAAALAA0ADAAIAAQAAAALAA4ADAAIAAQAAAAMAA0ADAAIAAQAAAAMAA4ADAAIAAQAAAANAA0ADAAIAAQAAAANAA4ADAAIAAQAAAAOAA0ADAAIAAQAAAAOAA4ADAAIAAQAAAAaAA0ADAAIAAQAAAAaAA4ADAAIAAQAAAAaAA8ADAAIAAQAAAAbAA0ADAAIAAQAAAAbAA4ADAAIAAQAAAAbAA8ADAAIAAQAAAAcAA0ADAAIAAQAAAAcAA4ADAAIAAQAAAAcAA8ADAAIAAQAAAAdAA0ADAAIAAQAAAAdAA4ADAAIAAQAAAAdAA8ADAAIAAQAAAAeAA0ADAAIAAQAAAAeAA4ADAAIAAQAAAAeAA8ADAAIAAQAAAAYAA8ADAAIAAQAAAAYABAADAAIAAQAAAAZAA8ADAAIAAQAAAAZABAADAAIAAQAAAAaABAADAAIAAQAAAAZAA4ADAAIAAQAAAAWAAsADAAIAAQAAAAXAAsADAAIAAQAAAAYAAsADAAIAAQAAAAZAAsADAAIAAQAAAAWAAwADAAIAAQAAAAXAAwADAAIAAQAAAAWAA0ADAAIAAQAAAARAA8ADAAIAAQAAAARABAADAAIAAQAAAASAA8ADAAIAAQAAAASABAADAAIAAQAAAATAA8ADAAIAAQAAAATABAADAAIAAQAAAAUAA8ADAAIAAQAAAAUABAADAAIAAQAAAAVAA8ADAAIAAQAAAAVABAADAAIAAQAAAAWAA8ADAAIAAQAAAAWABAADAAIAAQAAAAQAA8ADAAIAAQAAAAQABAADAAIAAQAAAAHAPz/DAAHAAQAAAAIAPz/DAAHAAQAAAAJAPz/DAAHAAQAAAAKAPz/DAAHAAQAAAALAPz/DAAHAAQAAAAMAPz/DAAHAAQAAAAHAP3/DAAHAAQAAAAIAP3/DAAHAAQAAAAJAP3/DAAHAAQAAAAKAP3/DAAHAAQAAAD9//z/DAAHAAQAAAD+//z/DAAHAAQAAAD///z/DAAHAAQAAAAAAPz/DAAHAAQAAAD8/wAADAAHAAQAAAD8/wEADAAHAAQAAAD8/wIADAAHAAQAAAD9/wAADAAHAAQAAAD9/wEADAAHAAQAAAD9/wIADAAHAAQAAAD8//7/DAAHAAQAAAD8////DAAHAAQAAAD8//z/DAAHAAQAAAD1/wUADAAHAAQAAAD1/wYADAAHAAQAAAD1/wcADAAHAAQAAAD1/wgADAAHAAQAAAD1/wkADAAHAAQAAAD2/wUADAAHAAQAAAD2/wYADAAHAAQAAAD2/wcADAAHAAQAAAD2/wgADAAHAAQAAAD2/wkADAAHAAQAAAD3/wUADAAHAAQAAAD3/wYADAAHAAQAAAD3/wcADAAHAAQAAAD3/wgADAAHAAQAAAD3/wkADAAHAAQAAAD4/wUADAAHAAQAAAD4/wYADAAHAAQAAAD4/wcADAAHAAQAAAD4/wgADAAHAAQAAAD4/wkADAAHAAQAAAD0/wQADAAHAAQAAAD0/wUADAAHAAQAAAD1/wQADAAHAAQAAAD2/wQADAAHAAQAAAD3/wQADAAHAAQAAAD4/wQADAAHAAQAAAD0/wYADAAHAAQAAAA=")
 tile_set = SubResource("TileSet_4uiya")
+script = SubResource("GDScript_rh6eg")
+metadata/encounter_layer = true
 
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(32, 16)
-script = SubResource("GDScript_km0ab")
+script = ExtResource("11_qvpwr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
 position = Vector2(-32, -34)
@@ -1261,7 +1215,7 @@ offset_right = 72.0
 offset_bottom = 72.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("11_o13mr")
+texture = ExtResource("12_tko77")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -1291,7 +1245,7 @@ offset_right = 16.0
 offset_bottom = 16.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("12_emqcm")
+texture = ExtResource("13_bhhor")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -1321,7 +1275,7 @@ offset_right = 16.0
 offset_bottom = 8.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("13_d8ky4")
+texture = ExtResource("14_e818f")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -1409,7 +1363,7 @@ offset_right = 16.0
 offset_bottom = 16.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("14_jsj44")
+texture = ExtResource("15_2kndl")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -1456,7 +1410,7 @@ offset_right = 16.0
 offset_bottom = 16.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("15_81si1")
+texture = ExtResource("16_2wb11")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -1503,7 +1457,7 @@ offset_right = 16.0
 offset_bottom = 16.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("16_devb5")
+texture = ExtResource("17_pihf5")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -1551,7 +1505,7 @@ offset_right = 16.0
 offset_bottom = 16.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("17_hxx14")
+texture = ExtResource("18_3s8s6")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -1599,7 +1553,7 @@ offset_right = 16.0
 offset_bottom = 16.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("18_f3lhg")
+texture = ExtResource("19_xhnno")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -1645,7 +1599,7 @@ offset_right = 16.0
 offset_bottom = 16.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("19_s4cy1")
+texture = ExtResource("20_kaybn")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 

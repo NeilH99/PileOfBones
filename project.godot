@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="The never ending plight of the poor souls of the Judean Peoples Front - The Sequel"
-run/main_scene="res://Scenes/Overworld/OverworldPlayerMovement.tscn"
+run/main_scene="res://Scenes/Overworld/Scripts/Overworld.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 boot_splash/bg_color=Color(1, 1, 1, 1)
 boot_splash/image="res://Assets/Drawables/scorcher.png"
