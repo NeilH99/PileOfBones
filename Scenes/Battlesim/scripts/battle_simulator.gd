@@ -11,39 +11,24 @@ func _ready():
 
 func _on_fight_pressed():
 
-	var btn = $CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Fight.duplicate()
-	var fightBtn = $CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Fight.duplicate()
-	var bagBtn = $CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Bag.duplicate()
-	var pokemonBtn = $CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Pokemon.duplicate()
-	var runBtn = $CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Run.duplicate()
+	var btn1 = $CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Fight
+	var btn2 = $CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Bag
+	var btn3 = $CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Pokemon
+	var btn4 = $CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Run
 
-	$CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Fight.queue_free()
-	$CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Bag.queue_free()
-	$CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Pokemon.queue_free()
-	$CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Run.queue_free()
-
-	# Create a new button
-	var fight1 = btn.duplicate()
-	fight1.text = myPokemon.moveset[0]
-	var fight2 = btn.duplicate()
-	fight2.text = "Fight 2 Move"
-	var fight3 = btn.duplicate()
-	fight3.text = "Fight 3 Move"
-	var fight4 = btn.duplicate()
-	fight4.text = "Fight 4 Move"
+	btn1.text = myPokemon.moveset[0]
+	btn2.text = "Fight 2 Move"
+	btn3.text = "Fight 3 Move"
+	btn4.text = "Fight 4 Move"
 	
-	var backBtn = btn.duplicate()
+	var backBtn = btn1.duplicate()
 	backBtn.text = "Back"
-	backBtn.pressed.connect(backBtnPressed.bind(fightBtn, bagBtn, pokemonBtn, runBtn))
-	
-	$CanvasLayer/VBoxContainer/PanelContainer/HomeButtons.add_child(fight1)
-	$CanvasLayer/VBoxContainer/PanelContainer/HomeButtons.add_child(fight2)
-	$CanvasLayer/VBoxContainer/PanelContainer/HomeButtons.add_child(fight3)
-	$CanvasLayer/VBoxContainer/PanelContainer/HomeButtons.add_child(fight4)
+	backBtn.pressed.connect(backBtnPressed.bind(btn1, btn2, btn3, btn4))
+
 	$CanvasLayer/VBoxContainer/PanelContainer/HomeButtons.add_child(backBtn)
 
 	
-	fightBtnHandler.handleFight(fight1, fight2, fight3, fight4)
+	fightBtnHandler.handleFight(btn1, btn2, btn3, btn4)
 	
 func backBtnPressed(fightBtn, bagBtn, pokemonBtn, runBtn):
 	for kid in $CanvasLayer/VBoxContainer/PanelContainer/HomeButtons.get_children():

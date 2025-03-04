@@ -1,0 +1,149 @@
+[gd_scene load_steps=8 format=3 uid="uid://cpwnltlbm8pv7"]
+
+[ext_resource type="Script" path="res://Scenes/Battlesim/scripts/battle_simulator.gd" id="1_6k6vr"]
+[ext_resource type="Texture2D" uid="uid://bypoup20pfa6i" path="res://Assets/Drawables/Pokemon Images/With Backgrounds/neel.jpg" id="3_6ekmt"]
+[ext_resource type="Theme" uid="uid://byhx7y1a44i6n" path="res://Themes/BattleUI.tres" id="3_xv0ka"]
+[ext_resource type="Shader" path="res://Scenes/Battlesim/tileWorld.gdshader" id="4_1bdv3"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qvhr1"]
+shader = ExtResource("4_1bdv3")
+shader_parameter/spin_rotation = -2.0
+shader_parameter/spin_speed = 10.0
+shader_parameter/offset = Vector2(0, 0)
+shader_parameter/colour_1 = Vector4(0.871, 0.267, 0.231, 1)
+shader_parameter/colour_2 = Vector4(0, 0.42, 0.706, 1)
+shader_parameter/colour_3 = Vector4(0.086, 0.137, 0.145, 1)
+shader_parameter/contrast = 3.5
+shader_parameter/lighting = 0.4
+shader_parameter/spin_amount = 0.25
+shader_parameter/pixel_filter = 745.0
+shader_parameter/spin_ease = 1.0
+shader_parameter/is_rotate = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c3doy"]
+bg_color = Color(0.325441, 0.325441, 0.325441, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dysca"]
+bg_color = Color(0.121569, 0.678431, 0.215686, 1)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_6k6vr")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BalatroBackgroundShader" type="ColorRect" parent="CanvasLayer"]
+z_index = -1
+material = SubResource("ShaderMaterial_qvhr1")
+offset_left = -3816.0
+offset_top = -3368.0
+offset_right = 6648.0
+offset_bottom = 4200.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+offset_right = 953.0
+offset_bottom = 1077.0
+
+[node name="PlaceHolder" type="TextureRect" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("3_6ekmt")
+expand_mode = 1
+
+[node name="PlayerHealthBar" type="ProgressBar" parent="CanvasLayer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+theme_override_font_sizes/font_size = 31
+theme_override_styles/background = SubResource("StyleBoxFlat_c3doy")
+theme_override_styles/fill = SubResource("StyleBoxFlat_dysca")
+value = 90.0
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.35
+theme = ExtResource("3_xv0ka")
+
+[node name="HomeButtons" type="GridContainer" parent="CanvasLayer/VBoxContainer/PanelContainer"]
+layout_mode = 2
+columns = 2
+
+[node name="Fight" type="Button" parent="CanvasLayer/VBoxContainer/PanelContainer/HomeButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Fight"
+
+[node name="Bag" type="Button" parent="CanvasLayer/VBoxContainer/PanelContainer/HomeButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Bag"
+
+[node name="Pokemon" type="Button" parent="CanvasLayer/VBoxContainer/PanelContainer/HomeButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Pokemon"
+
+[node name="Run" type="Button" parent="CanvasLayer/VBoxContainer/PanelContainer/HomeButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Run"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer"]
+offset_left = 966.0
+offset_right = 1919.0
+offset_bottom = 1077.0
+
+[node name="PlaceHolder" type="TextureRect" parent="CanvasLayer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("3_6ekmt")
+expand_mode = 1
+
+[node name="PlayerHealthBar" type="ProgressBar" parent="CanvasLayer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+theme_override_font_sizes/font_size = 31
+theme_override_styles/background = SubResource("StyleBoxFlat_c3doy")
+theme_override_styles/fill = SubResource("StyleBoxFlat_dysca")
+value = 90.0
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.35
+theme = ExtResource("3_xv0ka")
+
+[node name="HomeButtons" type="GridContainer" parent="CanvasLayer/VBoxContainer2/PanelContainer"]
+visible = false
+layout_mode = 2
+columns = 2
+
+[node name="Fight" type="Button" parent="CanvasLayer/VBoxContainer2/PanelContainer/HomeButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Fight"
+
+[node name="Bag" type="Button" parent="CanvasLayer/VBoxContainer2/PanelContainer/HomeButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Bag"
+
+[node name="Pokemon" type="Button" parent="CanvasLayer/VBoxContainer2/PanelContainer/HomeButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Pokemon"
+
+[node name="Run" type="Button" parent="CanvasLayer/VBoxContainer2/PanelContainer/HomeButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Run"
