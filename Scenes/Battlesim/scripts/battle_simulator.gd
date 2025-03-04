@@ -23,6 +23,7 @@ func _on_fight_pressed():
 
 func makeMoveBtn(btn:Button, num):
 		btn.text = myPokemon.moveset[num]
+		#Handle this dynamically
 		if(num == 0):
 			btn.pressed.disconnect(_on_fight_pressed)
 		btn.pressed.connect(handleMove.bind(btn))
