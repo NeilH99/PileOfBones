@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://cpwnltlbm8pv7"]
+[gd_scene load_steps=10 format=3 uid="uid://cpwnltlbm8pv7"]
 
 [ext_resource type="Script" path="res://Scenes/Battlesim/scripts/battle_simulator.gd" id="1_6k6vr"]
 [ext_resource type="Texture2D" uid="uid://bypoup20pfa6i" path="res://Assets/Drawables/Pokemon Images/With Backgrounds/neel.jpg" id="3_6ekmt"]
 [ext_resource type="Theme" uid="uid://byhx7y1a44i6n" path="res://Themes/BattleUI.tres" id="3_xv0ka"]
 [ext_resource type="Shader" path="res://Scenes/Battlesim/tileWorld.gdshader" id="4_1bdv3"]
+[ext_resource type="Texture2D" uid="uid://ddddcsnk3lyrm" path="res://Assets/Drawables/Pokemon Images/With Backgrounds/philipottomus.jpg" id="4_dwiux"]
+[ext_resource type="Script" path="res://Scenes/Battlesim/scripts/player_health_bar.gd" id="4_j2q2b"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qvhr1"]
 shader = ExtResource("4_1bdv3")
@@ -58,6 +60,7 @@ theme_override_font_sizes/font_size = 31
 theme_override_styles/background = SubResource("StyleBoxFlat_c3doy")
 theme_override_styles/fill = SubResource("StyleBoxFlat_dysca")
 value = 90.0
+script = ExtResource("4_j2q2b")
 
 [node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
@@ -93,57 +96,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Run"
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer"]
-offset_left = 966.0
-offset_right = 1919.0
-offset_bottom = 1077.0
-
-[node name="PlaceHolder" type="TextureRect" parent="CanvasLayer/VBoxContainer2"]
-layout_mode = 2
-size_flags_vertical = 3
-texture = ExtResource("3_6ekmt")
-expand_mode = 1
-
-[node name="PlayerHealthBar" type="ProgressBar" parent="CanvasLayer/VBoxContainer2"]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 0.1
-theme_override_font_sizes/font_size = 31
-theme_override_styles/background = SubResource("StyleBoxFlat_c3doy")
-theme_override_styles/fill = SubResource("StyleBoxFlat_dysca")
-value = 90.0
-
-[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/VBoxContainer2"]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 0.35
-theme = ExtResource("3_xv0ka")
-
-[node name="HomeButtons" type="GridContainer" parent="CanvasLayer/VBoxContainer2/PanelContainer"]
-visible = false
-layout_mode = 2
-columns = 2
-
-[node name="Fight" type="Button" parent="CanvasLayer/VBoxContainer2/PanelContainer/HomeButtons"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "Fight"
-
-[node name="Bag" type="Button" parent="CanvasLayer/VBoxContainer2/PanelContainer/HomeButtons"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "Bag"
-
-[node name="Pokemon" type="Button" parent="CanvasLayer/VBoxContainer2/PanelContainer/HomeButtons"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "Pokemon"
-
-[node name="Run" type="Button" parent="CanvasLayer/VBoxContainer2/PanelContainer/HomeButtons"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "Run"
+[node name="Philipottomus" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(1472, 448)
+scale = Vector2(0.466667, 0.82963)
+texture = ExtResource("4_dwiux")

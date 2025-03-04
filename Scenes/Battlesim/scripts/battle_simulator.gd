@@ -1,7 +1,8 @@
 extends Node2D
 
 var fightBtnHandler = preload("res://Scenes/Battlesim/scripts/fightBtnHandler.gd").new()
-var playerHealth = preload("res://Scenes/Battlesim/scripts/player_health_bar.gd").new()
+var myPokemon
+var enemyPokemon
 
 func _ready():
 	# Connect Button1's pressed signal
@@ -23,7 +24,7 @@ func _on_fight_pressed():
 
 	# Create a new button
 	var fight1 = btn.duplicate()
-	fight1.text = "Fight 1 Move"
+	fight1.text = myPokemon.moveset[0]
 	var fight2 = btn.duplicate()
 	fight2.text = "Fight 2 Move"
 	var fight3 = btn.duplicate()
@@ -55,20 +56,25 @@ func backBtnPressed(fightBtn, bagBtn, pokemonBtn, runBtn):
 	$CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Fight.pressed.connect(_on_fight_pressed)
 
 func generatePokemon():
-	var pokeImgFolder = get_files_in_folder("res://Assets/Drawables/Pokemon Images/With Backgrounds/")
-	$CanvasLayer/VBoxContainer/PlaceHolder.texture = load("res://Assets/Drawables/Pokemon Images/With Backgrounds/" + pokeImgFolder.pick_random())
+	var pokemonFolder =  get_files_in_folder("res://Assets/Monsterpool/", "scripts")
+	#myPokemon = load("res://Assets/Monsterpool/" + pokemonFolder.pick_random())
+	myPokemon = load("res://Assets/Monsterpool/alfinitree.tres")
+	print(myPokemon.name)
+	$CanvasLayer/VBoxContainer/PlaceHolder.texture = load("res://Assets/Drawables/Pokemon Images/With Backgrounds/" + myPokemon.name + ".jpg")
+	$CanvasLayer/VBoxContainer/PlayerHealthBar.value = myPokemon.hp
 	
-	playerHealth.setHealth(100)
-	
+	enemyPokemon = load("res://Assets/Monsterpool/" + pokemonFolder.pick_random())
+	$CanvasLayer/VBoxContainer2/PlaceHolder.texture = load("res://Assets/Drawables/Pokemon Images/With Backgrounds/" + enemyPokemon.name + ".jpg")
+	$CanvasLayer/VBoxContainer2/PlayerHealthBar.value = enemyPokemon.hp
 
-func get_files_in_folder(path: String) -> Array:
+func get_files_in_folder(path: String , exlude: String) -> Array:
 	var dir := DirAccess.open(path)
 	var imgs = []
 	if dir:
 		dir.list_dir_begin()
 		var file_name = dir.get_next()
 		while file_name != "":
-			if "import" not in file_name:
+			if exlude not in file_name:
 				imgs.append(file_name)
 			file_name = dir.get_next()
 	else:
