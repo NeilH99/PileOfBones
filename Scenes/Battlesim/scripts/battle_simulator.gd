@@ -3,7 +3,6 @@ extends Node2D
 var fightBtnHandler = preload("res://Scenes/Battlesim/scripts/fightBtnHandler.gd").new()
 var myPokemon
 var enemyPokemon
-var home = true
 @onready var btn1 = $CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Fight
 @onready var btn2 = $CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Bag
 @onready var btn3 = $CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Pokemon
@@ -12,33 +11,38 @@ var home = true
 
 func _ready():
 	backBtn.pressed.connect(backBtnPressed)
-	if(home):
-		$CanvasLayer/VBoxContainer/PanelContainer/HomeButtons/Fight.pressed.connect(_on_fight_pressed)
+	btn1.pressed.connect(_on_fight_pressed)
 	generatePokemon()
 	
-
-
 func _on_fight_pressed():
-
-	if(home):
-		
-
-		btn1.text = myPokemon.moveset[0]
-		btn2.text = "Fight 2 Move"
-		btn3.text = "Fight 3 Move"
-		btn4.text = "Fight 4 Move"
-		
+		makeMoveBtn(btn1, 0)
+		makeMoveBtn(btn2, 1)
+		makeMoveBtn(btn3, 2)
+		makeMoveBtn(btn4, 3)
 		backBtn.visible = true
-		fightBtnHandler.handleFight(btn1, btn2, btn3, btn4)
-		home = false
+
+func makeMoveBtn(btn:Button, num):
+		btn.text = myPokemon.moveset[num]
+		if(num == 0):
+			btn.pressed.disconnect(_on_fight_pressed)
+		btn.pressed.connect(handleMove.bind(btn))
+
+func handleMove(btn):
+	print(btn.text)
+	backBtnPressed()
 	
 func backBtnPressed():
 		
 	btn1.text = "Fight"
+	btn1.pressed.disconnect(handleMove)
+	btn1.pressed.connect(_on_fight_pressed)
 	btn2.text = "Bag"
+	btn2.pressed.disconnect(handleMove)
 	btn3.text = "Pokemon"
+	btn3.pressed.disconnect(handleMove)
 	btn4.text = "Run"
-	home = true
+	btn4.pressed.disconnect(handleMove)
+
 	backBtn.visible = false
 
 func generatePokemon():
